@@ -1,11 +1,6 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 
-const Index = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default Index
+import App from './App.js'
+import Navigation from './components/Navigation.jsx';
+ReactDOM.render(<Navigation/>,document.getElementById('root'));
