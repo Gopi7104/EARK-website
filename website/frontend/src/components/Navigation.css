@@ -1,25 +1,25 @@
+.eark__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-
-*{
-    margin:0px ;
-    padding: 0px;
-    box-sizing: border-box;
+    padding: 2rem 4rem;
 }
 
-.nav_bar_main{
-    margin-bottom: 10px;
-    /* position: fixed; */
-
+.eark__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.nav_logo{
-    /* display: absolute; */
-    position: fixed;
-    width: 110px;
-    height: 110px;
-    left: 103.28px;
-    top: 54.71px;
-    /* background-color: #017179;  */
+.eark__navbar-links_logo {
+    margin-right: 2rem;
+}
+
+.eark__navbar-links_logo img {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     box-shadow: 1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
     4.7px 4.7px 5.3px rgba(0, 0, 0, 0.05), 8.8px 8.8px 10px rgba(0, 0, 0, 0.042),
@@ -28,61 +28,147 @@
     70px 70px 80px rgba(0, 0, 0, 0.02),
     inset -1px -1px 3px -1px rgba(0, 0, 0, 0.3), 
     inset 3px 4px 10px 0px rgba(0, 0, 0, 0.3);   
-    /* z-index: 1; */
+
 }
- /* .nav_logo{
-position: absolute;
-width: 100px;
-height: 100px;
-left: 58.48px;
-top: 54.85px;
- } */
 
- .nav_link_container{
+.eark__navbar-links_container {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 91.5px;
-    margin-right: 60px;
-    gap: 40px;
- }
- .nav_link_container a {
+    flex-direction: row;
+}
+
+
+
+
+.eark__navbar-links_container p a
+ {
     text-decoration: none;
-    color: var(--color-black);
+    color: black;
     font-family: var(--font-satoshi);
-    font-style: normal;
-    line-height: 22px;
-    text-align: center;
+
+    font-weight: 700px;
     font-size: 20px;
-    /* position: fixed; */
+    line-height: 27px;
+    text-transform: capitalize;
+
+    margin: 0 .5rem;
     cursor: pointer;
+}
+.eark__navbar-menu {
+    margin-left: 1rem;
 
-    /* font-weight : 560; */
+    display: none;
+    position: relative;
+}
 
- }
- @media (max-width: 790px) {
-    .nav_logo{
-        width: 90px;
-        height: 90px;
-        left: 50.34px;
-        top: 54.71px;
+.eark__navbar-menu svg {
+    cursor: pointer;
+}
+
+.eark__navbar-menu_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    
+    text-align: center;
+    /* background:; */
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+}
+
+.eark__navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+.eark__navbar-links a,
+.eark__navbar-menu_container-links a {
+  text-decoration: none;
+  color: black; 
+  padding: 10px 20px;
+  display: inline-block;
+  transition: color 0.5s, background-color 0.3s; 
+  position: relative; 
+}
+
+.eark__navbar-links a.active,
+.eark__navbar-menu_container-links a.active {
+  color: var(--color-primary1); 
+}
+
+/* Styles for navbar links container (for both desktop and mobile) */
+.eark__navbar-links_container {
+  display: flex;
+  align-items: center;
+  /* gap: 10px;  */
+}
+
+
+.eark__navbar-menu_container {
+  display: none; 
+}
+
+
+.eark__navbar-menu_container.scale-up-center {
+  display: block; 
+}
+
+.eark__navbar-menu_container-links p {
+  margin: 0;
+}
+@media  screen and (max-width:970px) {
+    .eark__navbar-links_container p a{
+        font-size: 16px;
+        padding:  1rem 0.5rem;
+        gap: 80px;
+
+    
 
     }
     
- }
+}
 
- @media (max-width:620px){
-    .nav_logo{
-        width:50px;
-        height: 50px;
-        top:27.45px;
-        left:22.49px;
+@media screen and (max-width: 700px) {
+
+    .eark__navbar-links_logo  img{
+        width: 70px;
+        height: 70px;
 
     }
+    .eark__navbar{
+        padding: 2rem;
+    }
 
- }
+    .eark__navbar-links_container {
+        display: none;
+    }
 
 
+    .eark__navbar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .eark__navbar-links_logo  img{
+        width: 50px;
+        height: 50px;
+
+    }
+    .eark__navbar {
+        padding: 1.6rem;
+    }
+
+    .eark__navbar-menu_container {
+        top: 20px;
+    }
 
 
-
+}
