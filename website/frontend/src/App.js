@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Routes, Route,useLocation } from "react-router-dom";
 
 import { Footer } from './components';
+import { Home } from './pages';
 
 const App = () => {
   const location = useLocation();
@@ -10,6 +11,9 @@ const App = () => {
   },[location])
   return (
     <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
       <Footer/>
     </div>
   );
