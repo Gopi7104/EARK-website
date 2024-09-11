@@ -19,7 +19,7 @@
     width: 551px;
     height: 267px;
     left: 99.3px;
-    top: 180px;
+    top: 320px;
 }
 .scl_name{
     font-size: 86px;
@@ -30,11 +30,11 @@
 }
 
 .home_description{
-    position: absolute;
+    position: relative;
     width: 517.72px;
     height: 90px;
     left: 99.3px;
-    top: 500px;
+    top: 535px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -45,7 +45,7 @@
 .home_img_btns{
     display: flex;
     flex-direction: column;
-    padding-top: 700px;
+    margin-top: 610px;
     padding-left: 99.3px;
 }
 
@@ -192,16 +192,16 @@
         font-weight: 800;
     }
     .home_scl_name{
-        top: 100px;
+        top: 240px;
     }
     .home_description{
-        top: 318px;
+        top: 340px;
         font-size: 20px;
         width: 400.72px;
         line-height: 25px;
     }
     .home_img_btns{
-        padding-top: 465px;
+        margin-top: 365px;
     }
     .home_apply_btn,.home_broucher_btn{
         width: 300px;
@@ -253,18 +253,18 @@
         font-weight: 800;
     }
     .home_scl_name{
-        top: 65px;
+        top: 200px;
         left: 48.37px;
     }
     .home_description{
-        top: 230px;
+        top: 250px;
         font-size: 20px;
         width: 295.95px;
         line-height: 24px;
         left: 48.37px;
     }
     .home_img_btns{
-        padding-top: 380px;        
+        margin-top: 290px;        
         padding-left: 48.37px;
     }
     .home_apply_btn,.home_broucher_btn{
@@ -328,7 +328,6 @@
     }
     .home_hero_container{
         background-image: url('../../assets/hero_img_mobile _with_pattern.webp');
-        margin-top: 10px;
     }
     .scl_name{
         font-size: 31px;
@@ -337,14 +336,14 @@
         
     }
     .home_scl_name{
-        top: 410px;
+        top: 470px;
         left: 30px;
         line-height: 36px;
         width: 199px;
         height: 108px;
     }
     .home_description{
-        top: 530px;
+        top: 520px;
         font-size: 14px;
         width: 280px;
         line-height: 19px;
@@ -353,7 +352,7 @@
     .home_img_btns{
         display: flex;
         flex-direction: row;       
-        padding: 610px 22px 0px 22px;
+        padding: 230px 22px 0px 22px;
         justify-content: space-between;
     }
     

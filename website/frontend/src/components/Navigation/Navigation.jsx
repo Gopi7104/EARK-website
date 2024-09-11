@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import logo from '../asset/Picture/schlogo.webp';
+import logo from '../../assets/schlogo.webp';
 import './Navigation.css';
-import '../index.css';
 
 const Navigation = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
