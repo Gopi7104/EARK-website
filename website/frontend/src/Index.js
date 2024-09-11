@@ -1,6 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import {BrowserRouter} from 'react-router-dom';
+import App from './App';
+import './index.css';
 
-import App from './App.js'
-import Navigation from './components/Navigation.jsx';
-ReactDOM.render(<Navigation/>,document.getElementById('root'));
+import ReactGA from 'react-ga4';
+
+ReactGA.initialize('G-0HLNW2W47S');
+
+    ReactDOM.createRoot(document.getElementById('root')).render(
+        <BrowserRouter>
+            <App/>
+        </BrowserRouter>
+
+    ); 
