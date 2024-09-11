@@ -1,0 +1,14 @@
+.footer {
+    /* background-color: #008C95; */
+    background-image: url('../../assets/icons/location_icon.svg'); /* Relative path */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* color: white; */
+    /* text-align: center; */
+    position: relative;
+    padding-bottom: 25px;
+    /* overflow: hidden; */
+    /* font-family: 'Arial', sans-serif;  */
+    /* width:100%; */
+    /* height: auto; */
+  }

@@ -1,11 +1,15 @@
 import React from 'react'
+import ReactDOM from 'react-dom/client';
+import {BrowserRouter} from 'react-router-dom';
+import App from './App';
+import './index.css';
+import ReactGA from 'react-ga4';
 
-const Index = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+ReactGA.initialize('G-0HLNW2W47S');
 
-export default Index
+    ReactDOM.createRoot(document.getElementById('root')).render(
+        <BrowserRouter>
+            <App/>
+        </BrowserRouter>
+
+    );  
