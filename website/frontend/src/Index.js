@@ -1,7 +1,10 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom'
+
+import App from './App.js'
+import Navigation from './components/Navigation.jsx';
+ReactDOM.render(<Navigation/>,document.getElementById('root'));
 import {BrowserRouter} from 'react-router-dom';
-import App from './App';
 import './index.css';
 import ReactGA from 'react-ga4';
 
