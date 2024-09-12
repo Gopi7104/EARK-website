@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 4rem;
+    padding: 2rem 4rem 0rem ;
     z-index: 100;
         position: relative; /* Add this if not present */
         z-index: 1000; /* Ensure it's not conflicting with other elements */
@@ -23,8 +23,8 @@
 }
 
 .eark__navbar-links_logo img {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     box-shadow: 1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
     4.7px 4.7px 5.3px rgba(0, 0, 0, 0.05), 8.8px 8.8px 10px rgba(0, 0, 0, 0.042),
@@ -149,6 +149,17 @@
     
 }
 
+@media screen and (max-width: 770px){
+    .eark__navbar-links_logo img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .eark__navbar{
+        padding: 32px 32px 0px;
+    }
+}
+
 @media screen and (max-width: 700px) {
 
     .eark__navbar-links_logo  img{
@@ -174,8 +185,8 @@
 @media screen and (max-width: 550px) {
 
     .eark__navbar-links_logo  img{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         margin-top: -13px;
         margin-left: -15px;
 
