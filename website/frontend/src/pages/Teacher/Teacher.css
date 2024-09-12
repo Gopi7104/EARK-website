@@ -5,7 +5,7 @@
 
 /* General Styles */
 .teachers-section {
-  padding:150px 160px 0px 90px;
+  padding:60px 160px 0px 90px;
   box-sizing: border-box;
 }
 
@@ -98,12 +98,13 @@
   }
   @media (max-width: 999px) {
     .teachers-section{
-      padding:150px 150px 0px 80px;
+      padding:30px 150px 0px 80px;
     }
     .teacher_contentone{
       font-size: 18px;
       line-height: 1.5rem;
     }
+    
   }
   
   
@@ -122,8 +123,11 @@
       width :100%;
 
     }
+    .teacher_heading{
+      font-size: 18px;
+    }
     .teachers-section{
-      padding:150px 30px 0px 20px;
+      padding:10px 30px 0px 20px;
     }
     .teacher_contentone{
       font-size: 16px;
