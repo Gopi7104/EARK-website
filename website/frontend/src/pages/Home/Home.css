@@ -181,8 +181,9 @@
 
 @media(max-width:1440px){
     .home_hero_container{
-        height: 107vh;
+        height: 130vh;
     }
+    
 }
 
 @media(max-width:1030px){
