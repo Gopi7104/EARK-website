@@ -17,9 +17,11 @@ const Navigation = () => {
   return (
     <div className="eark__navbar">
       <div className="eark__navbar-links">
+        <a href="/">
         <div className="eark__navbar-links_logo">
           <img src={logo} alt="Logo" />
         </div>
+        </a>
         <div className="eark__navbar-links_container">
           {links.map(({ href, text }) => (
             <p key={href}>
