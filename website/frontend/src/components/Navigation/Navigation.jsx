@@ -7,11 +7,11 @@ import '../../index.css';
 
 const Navigation = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [activeLink, setActiveLink] = useState('#home');
+  const [activeLink, setActiveLink] = useState('/');
 
   const links = [
     { href: '/', text: 'Home' },
-    { href: "/about", text: 'About Us' },
+    { href: '/about', text: 'About Us' },
     { href: '/curriculum', text: 'Our Curriculum' },
     { href: '/teacher', text: 'Our Teachers' },
   ];

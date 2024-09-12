@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 2rem 4rem;
+    padding: 1rem 2rem;
 }
 
 
@@ -15,20 +15,22 @@
 }
 
 .eark__navbar-links_logo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    box-shadow:6px 6px 5px rgba(0, 0, 0, 0.15) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 2rem;
 }
 
 .eark__navbar-links_logo img {
-    width: 80px;
-    height: 80px;
+    width: 100%;
+    height: auto;
     border-radius: 50%;
-    box-shadow: 1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
-    4.7px 4.7px 5.3px rgba(0, 0, 0, 0.05), 8.8px 8.8px 10px rgba(0, 0, 0, 0.042),
-    15.6px 15.6px 17.9px rgba(0, 0, 0, 0.035),
-    29.2px 29.2px 33.4px rgba(0, 0, 0, 0.028),
-    70px 70px 80px rgba(0, 0, 0, 0.02),
-    inset -1px -1px 3px -1px rgba(0, 0, 0, 0.3), 
-    inset 3px 4px 10px 0px rgba(0, 0, 0, 0.3);   
+   
 
 }
 
@@ -169,13 +171,17 @@
 
 
     }
+    .eark__navbar-links_logo{
+        width: 70px;
+        height: 70px;
+    }
 
     .eark__navbar-links_logo  img{
-        width: 100px;
-        height: 100px;
-        //incoming change
-        margin-top: -13px;
-        margin-left: -15px;
+        width: 70px;
+        height: 70px;
+        /* //incoming change */
+        /* margin-top: -13px;
+        margin-left: -15px; */
 
 
     }
