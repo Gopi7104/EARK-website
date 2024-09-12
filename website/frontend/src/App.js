@@ -16,13 +16,14 @@ const App = () => {
     <div>
       <Navigation/>
       <Routes>
-      {/* <Route path="/" element={<Home />} /> */}
-      <Route path="/about" element={<About />} />
-
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/curriculam" element={<Curriculam />} /> 
+        <Route path="/teacher" element={<Teacher />} /> 
       </Routes>
-      
+      <Footer/>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
