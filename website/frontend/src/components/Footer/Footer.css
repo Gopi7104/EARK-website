@@ -45,8 +45,8 @@
 
 
 .footer_icon {
-  width: 28px;  
-  height: 28px;
+  width: 35px;  
+  height: 35px;
   margin-left: 10px;
   padding-top: 10px;
 }
@@ -107,8 +107,8 @@ list-style-type: none;
       font-size: 18px;
     }
     .footer_icon{
-      height: 26px;
-      width: 26px;
+      height: 36px;
+      width: 36px;
     }
     .footer_heading_underline{
       width: 17.5rem;
@@ -134,8 +134,8 @@ list-style-type: none;
       padding: 2px;
     }
     .footer_icon{
-      width: 22px;  
-      height: 22px;
+      width: 30px;  
+      height: 30px;
     }
     .footer_heading_underline{
       width: 12.5rem;
@@ -150,30 +150,38 @@ list-style-type: none;
   }
 
   @media(max-width:450px){
+    .footer{
+      height: 130px;
+    }
     .footer_logo img{
       display: none;
     }
+    .footer_contact{
+      padding-top: 18px;
+    }
     .footer_heading{
-      font-size: 11px;
+      font-size: 14px;
+      padding-right: 5px;
   }
     .footer_container{
       padding:20px 10px;
     }
     .footer_info{
-      font-size: 8px;
+      font-size: 10px;
       margin-top:5px;
     }
     .footer_info li{
-      padding: 0em;
+      padding-top: 1px;
     }
     .footer_icon{
-      width: 12px;  
-      height: 12px;
+      width: 23px;  
+      height: 23px;
     }
     .footer_heading_underline{
-      width: 6.4rem;
+      width: 7.5rem;
       margin-top: -8px;
       height: 1.1px;
+      margin-right: 5px;
     }
     .footer_social span {
       margin-right: -5px;

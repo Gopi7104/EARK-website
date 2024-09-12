@@ -33,7 +33,7 @@ const Teacher = () => {
             </div>
           </div>
         </div>
-        
+        </div>
         <div className="teachers-grid">
           {teacher.map((teacherData, index) => (
             <Teachercard 
@@ -57,7 +57,7 @@ const Teacher = () => {
           />
         )}
       </div>
-    </div>
+   
   );
 };
 
