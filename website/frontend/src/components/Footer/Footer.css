@@ -5,12 +5,12 @@
 }
   .footer {
     background-image: url('../../assets/footer.webp');
-    background-size: contain; 
     background-repeat: no-repeat;
-    height: 54.5vh; 
-    /* width: max-content; */
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    background-size: 100% 100%;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
   }
 
   .footer_container{
@@ -96,9 +96,6 @@ list-style-type: none;
   }
 
   @media(max-width:1030px){
-    .footer{
-      height: 41.2vh;
-    }
     .footer_container{
       padding: 60px 60px 0px 0px ;
     }
@@ -123,9 +120,6 @@ list-style-type: none;
   }
 
   @media(max-width:780px){
-    .footer{
-      height: 31.5vh;
-    }
     .footer_container{
       padding: 45px 50px 0px 50px;
     }
@@ -155,10 +149,7 @@ list-style-type: none;
     }
   }
 
-  @media(max-width:380px){
-    .footer{
-      height: 15vh;
-    }
+  @media(max-width:450px){
     .footer_logo img{
       display: none;
     }
