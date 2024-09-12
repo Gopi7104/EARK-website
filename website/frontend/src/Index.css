@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;700&display=swap');
+
+:root{
+
+    --font-satoshi:'Satoshi', sans-serif;
+    
+    --color-primary1:#0BB3BD;
+    --color-primary2:#076B71;
+    --color-primary3:#033A3D;
+
+    --color-yellow:#FCBB00;
+
+    --color-green:#1DBD0B;
+    --color-brown:#BD6A0B;
+    --color-red:#BD2F0B;
+
+    --color-black:#111111;
+    --color-white:#FCFCFC;
+
+
+
+
+
+}
