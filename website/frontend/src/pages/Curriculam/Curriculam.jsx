@@ -1,6 +1,6 @@
 import React from 'react';
 import './Curriculam.css';
-import CurriculamCard from '../../widgets/Curriculam_card/Curriculam_card';
+import Curriculam_card from '../../widgets/Curriculam_card/Curriculam_card';
 
 import { Curriculum } from "../../constants/Curriculum";
 
@@ -33,7 +33,7 @@ function Curriculam() {
         </div>
         <div className="teachers-grid">
           {Curriculum.map((teacherData, index) => (
-            <CurriculamCard
+            <Curriculam_card
               key={index} 
               name={teacherData.name} 
               image={teacherData.image} 
