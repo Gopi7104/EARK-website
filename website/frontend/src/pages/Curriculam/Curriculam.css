@@ -55,6 +55,9 @@
 .curriculam_header div:last-child {
   top: 70%;
 }
+.curriculum_name{
+color: aqua;
+}
 
 .curriculum_content1 h1,
 .curriculum_content2 h1,
