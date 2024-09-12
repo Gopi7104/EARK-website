@@ -1,30 +1,39 @@
+*{
+  margin: 0px;
+  padding:0px;
+}
+
 /* General Styles */
 .teachers-section {
-    padding: 10px;
-    box-sizing: border-box;
-  }
+  padding:150px 160px 0px 90px;
+  box-sizing: border-box;
+}
+
   
   /* Container for consistent margin */
   .content-container {
     max-width: 1500px;
-    padding-left: 5px; /* Further reduced padding */
-    padding-right: 5px; /* Further reduced padding */
+    /* padding-left: 5px; 
+    padding-right: 5px;  */
+ 
   }
   
   /* Heading Styles */
   .teacher_heading {
     margin-bottom: 20px;
     font-size: 22px;
+    /* padding-left: 40px; */
+    
   }
   
   /* Teacher Content */
-  .teacher_content {
+  /* .teacher_content {
     text-align: justify;
     font-size: 20px;
     line-height: 1.5rem;
     color: black;
     margin-bottom: 30px;
-  }
+  } */
   
   /* Teachers Header */
   .teachers-header {
@@ -41,12 +50,14 @@
     /* padding: 15px 5px;  */
     font-size: 22px;
     color: black;
-    line-height: 1.5rem;
+    line-height: 2.5rem;
     text-indent: 25px;
     margin-bottom: 30px;
+    margin-right: -65px;
     text-align: justify;
     box-sizing: border-box;
     font-family:'Lato';
+    justify-content: justify;
   }
   
   /* Teachers Grid */
@@ -56,8 +67,8 @@
     text-align: center;
     gap: 20px;
     flex-wrap: wrap;
-    padding-left: 5px; 
-    padding-right: 5px; 
+    /* padding-left: 5px;  */
+    margin-right: -50px; 
     box-sizing: border-box;
   }
  
@@ -85,32 +96,38 @@
       margin: 0 auto; 
     }
   }
-  
-  /* For small screens (up to 600px wide), 1 card per row */
-  /* @media (max-width: 600px) {
-    .teachers-grid {
-      justify-content: center;
+  @media (max-width: 999px) {
+    .teachers-section{
+      padding:150px 150px 0px 80px;
     }
-    .teachers-grid > * {
-      flex-basis: 100%; 
-      max-width: 100%; 
+    .teacher_contentone{
+      font-size: 18px;
+      line-height: 1.5rem;
     }
-  } */
-  
-  /* @media (max-width:500px){
-    .teachers-grid{
-      flex-direction: column;
-    }
-  } */
+  }
   
   
-  /* For small screens (up to 600px wide), 1 card per row */
+
   @media (max-width: 500px) {
     .teachers-grid {
       justify-content: center;
+      text-align: center;
+      padding-right: 40px;
+      top:30px;
     }
     .teachers-grid > * {
       flex-basis: 90%;
+    }
+    .teacher_contentone{
+      width :100%;
+
+    }
+    .teachers-section{
+      padding:150px 30px 0px 20px;
+    }
+    .teacher_contentone{
+      font-size: 16px;
+      line-height: 1.5rem;
     }
   }
   
@@ -153,4 +170,3 @@
       width:400px;
     }
   }   */
-  

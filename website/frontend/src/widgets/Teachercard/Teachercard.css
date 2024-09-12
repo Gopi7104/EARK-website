@@ -39,6 +39,8 @@
     opacity: 1; /* Ensure it's visible by default */
     padding: 10px;
   }
+
+  
   
   .teacher-card:hover .teacher-info {
     opacity: 0; /* Hide the name on hover */

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Routes, Route,useLocation } from "react-router-dom";
 import { Footer,Navigation } from './components';
-import { Home,Teacher } from './pages';
+import { Home,Teacher,Aboutus } from './pages';
 
 const App = () => {
   const location = useLocation();
@@ -14,6 +14,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/teacher" element={<Teacher />} /> 
+
       </Routes>
       <Footer/>
     </div>
