@@ -1,0 +1,476 @@
+*{
+  box-sizing: border-box;
+}
+.curriculam_page {
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.teachers-grid {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+
+.curriculam_header {
+  background-image: url('../../assets/curriculum_hero_img.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensure the image covers the entire container */
+  width: 100%;
+  height: 100vh; /* Adjust for full screen height */
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+.curriculam_header div {
+  position: absolute;
+  left: 0; /* Align text to the left side */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  font-size: 50px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 0 20px; /* Add padding to prevent text from touching the edges */
+}
+
+.curriculam_header div:first-child {
+  top: 30%;
+}
+
+.curriculam_header div:nth-child(2) {
+  top: 50%;
+}
+
+.curriculam_header div:last-child {
+  top: 70%;
+}
+
+.curriculum_content1 h1,
+.curriculum_content2 h1,
+.curriculum_content3 h1 {
+  color: #4CAF50;
+  font-size: 20px;
+  font-weight: bold;
+  /* padding-top: 20px; */
+  padding-bottom: 20px;
+}
+
+.curriculum_content1 p,
+.curriculum_content2 p,
+.curriculum_content3 p {
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.curriculum_content {
+  display: flex;
+  gap: 10%;
+}
+
+.curriculum_content1,
+.curriculum_content2 {
+  flex: 1;
+  min-width: 0;
+}
+
+.curriculum_content2 p:nth-of-type(2) {
+  position: relative;
+  padding-left: 20px;
+  text-align: justify;
+}
+
+.curriculum_content2 p:nth-of-type(2)::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: -8px;
+  font-size: 25px;
+  color: black;
+}
+
+.curriculum_content3 h1 {
+  color: #4CAF50;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.curriculum_content3 p {
+  font-size: 15px;
+  text-indent: 50px;
+  line-height: 1.5;
+}
+
+.curriculum_box1,
+.curriculum_box2,
+.curriculum_box3 {
+  padding: 30px;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 100%;
+  margin: 70px auto;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+.curriculum_box1 h1,
+.curriculum_box2 h1,
+.curriculum_box3 h1 {
+  color: #4CAF50;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.curriculum_box1 p,
+.curriculum_box2 p,
+.curriculum_box3 p {
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.curriculum_cards {
+  margin-top: 40px;
+}
+
+/* Media Queries */
+
+
+@media(max-width:1024px){
+  .curriculam_header{
+    background-size: contain;
+    height: 45vh;
+  }
+}
+
+/* For larger screens (above 900px) */
+@media (min-width: 901px) {
+  .teachers-grid {
+    justify-content: space-around;
+  }
+  .teachers-grid > * {
+    flex-basis: 30%;
+  }
+}
+
+/* For medium screens (up to 900px wide) */
+@media (max-width: 900px) {
+  .teachers-grid {
+    justify-content: center;
+  }
+  .teachers-grid > * {
+    flex-basis: 45%;
+  }
+  
+}
+
+/* Tablet view (up to 768px wide) */
+@media (max-width: 768px) {
+  .curriculam_header{
+    height: 35vh;
+  }
+  .curriculum_box1,
+  .curriculum_box2,
+  .curriculum_box3 {
+    max-width: 90%;
+    padding: 15px;
+  }
+  .curriculum_content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .curriculum_content1 h1,
+  .curriculum_content2 h1,
+  .curriculum_content3 h1 {
+    font-size: 18px;
+    /* padding-top: 100px; */
+  }
+  .curriculum_content1 p,
+  .curriculum_content2 p,
+  .curriculum_content3 p {
+    font-size: 14px;
+  }
+  
+}
+
+/* Mobile view (up to 600px wide) */
+@media (max-width: 600px) {
+  .curriculam_header{
+    height: 25vh;
+  }
+  .teachers-grid {
+    justify-content: center;
+  }
+  .teachers-grid > * {
+    flex-basis: 90%;
+  }
+  
+}
+
+/* Phone view (up to 480px wide) */
+@media (max-width: 480px) {
+  .curriculam_header{
+    height: 35vh;
+  }
+  .curriculam_page{
+    padding: 25px;
+  }
+ 
+  .curriculum_box1,
+  .curriculum_box2,
+  .curriculum_box3 {
+    padding: 15px;
+    max-width: 95%;
+  }
+  .curriculum_box1 h1,
+  .curriculum_box2 h1,
+  .curriculum_box3 h1 {
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+ 
+  .curriculum_box1 p,
+  .curriculum_box2 p,
+  .curriculum_box3 p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .curriculum_content {
+    flex-direction: column;
+  }
+  .curriculum_content1,
+  .curriculum_content2 {
+    padding-right: 0;
+  }
+  .curriculum_content2 p:nth-of-type(2)::before {
+    font-size: 20px;
+  }
+  .curriculum_content3 p {
+    font-size: 14px;
+    line-height: 1.4;
+    padding-left: 10px;
+  }
+}
+@media(max-width:380px){
+  .curriculam_header{
+    height: 30vh;
+  }
+
+  }
+
+/* For screens between 320px and 750px */
+@media (min-width: 320px) and (max-width: 900px) {
+
+
+  .curriculam_header div {
+    position: absolute; /* Ensure text is positioned absolutely */
+   
+   
+    left: 0; /* Align text to the left side */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 0 50px;  /* Add padding for better text spacing */
+  }
+
+  .curriculam_header div:first-child {
+    top: 35%; /* Adjust top offset for the first line */
+  }
+
+  .curriculam_header div:nth-child(2) {
+    top: 43%; /* Adjust top offset for the second line */
+  }
+
+  .curriculam_header div:last-child {
+    top: 51%; /* Adjust top offset for the third line */
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 600px) {
+
+  .curriculam_header div {
+    position: absolute; /* Ensure text is positioned absolutely */
+    left: 50%; /* Center text horizontally */
+    transform: translateX(-50%); /* Center text horizontally */
+    font-size: 20px; /* Adjust font size for smaller screens */
+    /* Center align text */
+    padding: 0 10px;
+   
+    left: 0; /* Align text to the left side */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 0 50px;  /* Add padding for better text spacing */
+  }
+
+  .curriculam_header div:first-child {
+    top: 35%; /* Adjust top offset for the first line */
+  }
+
+  .curriculam_header div:nth-child(2) {
+    top: 43%; /* Adjust top offset for the second line */
+  }
+
+  .curriculam_header div:last-child {
+    top: 51%; /* Adjust top offset for the third line */
+  }
+}
+@media (min-width: 320px){
+
+  .curriculam_header div {
+    position: absolute; /* Ensure text is positioned absolutely */
+    left: 50%; /* Center text horizontally */
+    transform: translateX(-50%); /* Center text horizontally */
+    font-size: 20px; /* Adjust font size for smaller screens */
+    /* Center align text */
+    padding: 0 10px;
+   
+    left: 0; /* Align text to the left side */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 0 40px;  /* Add padding for better text spacing */
+  }
+
+  .curriculam_header div:first-child {
+    top: 35%; /* Adjust top offset for the first line */
+  }
+
+  .curriculam_header div:nth-child(2) {
+    top: 43%; /* Adjust top offset for the second line */
+  }
+
+  .curriculam_header div:last-child {
+    top: 51%; /* Adjust top offset for the third line */
+  }
+}
+@media (min-width: 350px){
+
+  .curriculam_header div {
+    position: absolute; /* Ensure text is positioned absolutely */
+    left: 50%; /* Center text horizontally */
+    transform: translateX(-50%); /* Center text horizontally */
+    font-size: 20px; /* Adjust font size for smaller screens */
+    /* Center align text */
+    padding: 0 10px;
+   
+    left: 0; /* Align text to the left side */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 0 50px;  /* Add padding for better text spacing */
+  }
+
+  .curriculam_header div:first-child {
+    top: 35%; /* Adjust top offset for the first line */
+  }
+
+  .curriculam_header div:nth-child(2) {
+    top: 43%; /* Adjust top offset for the second line */
+  }
+
+  .curriculam_header div:last-child {
+    top: 51%; /* Adjust top offset for the third line */
+  }
+}
+
+@media (min-width: 600px){
+
+  .curriculam_header div {
+    position: absolute; /* Ensure text is positioned absolutely */
+    left: 50%; /* Center text horizontally */
+    transform: translateX(-50%); /* Center text horizontally */
+    font-size: 20px; /* Adjust font size for smaller screens */
+    /* Center align text */
+    padding: 0 10px;
+   
+    left: 0; /* Align text to the left side */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 0 50px;  /* Add padding for better text spacing */
+  }
+
+  .curriculam_header div:first-child {
+    top: 35%; /* Adjust top offset for the first line */
+  }
+
+  .curriculam_header div:nth-child(2) {
+    top: 43%; /* Adjust top offset for the second line */
+  }
+
+  .curriculam_header div:last-child {
+    top: 51%; /* Adjust top offset for the third line */
+  }
+}
+
+@media (min-width: 880px){
+
+  .curriculam_header div {
+    position: absolute; /* Ensure text is positioned absolutely */
+    left: 50%; /* Center text horizontally */
+    transform: translateX(-50%); /* Center text horizontally */
+    font-size: 20px; /* Adjust font size for smaller screens */
+    /* Center align text */
+    padding: 0 10px;
+   
+    left: 0; /* Align text to the left side */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    font-size: 50px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 0 60px;  /* Add padding for better text spacing */
+  }
+
+  .curriculam_header div:first-child {
+    top: 35%; /* Adjust top offset for the first line */
+  }
+
+  .curriculam_header div:nth-child(2) {
+    top: 43%; /* Adjust top offset for the second line */
+  }
+
+  .curriculam_header div:last-child {
+    top: 51%; /* Adjust top offset for the third line */
+  }
+}
+
+
+
+
+
+

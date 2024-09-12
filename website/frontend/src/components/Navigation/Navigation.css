@@ -2,8 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 2rem 4rem;
+    z-index: 100;
+        position: relative; /* Add this if not present */
+        z-index: 1000; /* Ensure it's not conflicting with other elements */
+    
 }
 
 .eark__navbar-links {
@@ -11,6 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
 }
 
 .eark__navbar-links_logo {
@@ -41,6 +45,7 @@
 
 .eark__navbar-links_container p a
  {
+    z-index: 100;
     text-decoration: none;
     color: black;
     font-family: var(--font-satoshi);
@@ -55,7 +60,7 @@
 }
 .eark__navbar-menu {
     margin-left: 1rem;
-
+    z-index: 100;
     display: none;
     position: relative;
 }
@@ -70,25 +75,31 @@
     align-items: center;
     flex-direction: column;
     text-decoration: none;
-    
     text-align: center;
-    /* background:; */
     padding: 1rem;
     position: absolute;
+    z-index: 9999; /* Increased z-index to be above other elements */
     right: 0;
     top: 40px;
     margin-top: 1rem;
-    min-width: 210px;
+    min-width: 310px;
+    height: 50vh;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+    background-color: white; /* Ensure the background is not transparent */
+}
+.eark__navbar-menu {
+    z-index: 10000; /* Ensure the menu icon has a high enough z-index */
 }
 
 .eark__navbar-menu_container p {
     margin: 1rem 0;
+    z-index: 100;
 }
 
 .eark__navbar-links a,
 .eark__navbar-menu_container-links a {
+    z-index: 100;
   text-decoration: none;
   color: black; 
   padding: 10px 20px;
@@ -104,6 +115,7 @@
 
 /* Styles for navbar links container (for both desktop and mobile) */
 .eark__navbar-links_container {
+    z-index: 1000;
   display: flex;
   align-items: center;
   /* gap: 10px;  */
@@ -111,15 +123,20 @@
 
 
 .eark__navbar-menu_container {
-  display: none; 
+    z-index: 1000;
+  /* display: none;  */
 }
 
 
 .eark__navbar-menu_container.scale-up-center {
   display: block; 
+  
+  z-index: 1000;
+  position:absolute;
 }
 
 .eark__navbar-menu_container-links p {
+
   margin: 0;
 }
 @media  screen and (max-width:970px) {
@@ -127,9 +144,6 @@
         font-size: 16px;
         padding:  1rem 0.5rem;
         gap: 80px;
-
-    
-
     }
     
 }
@@ -152,14 +166,15 @@
 
     .eark__navbar-menu {
         display: flex;
+        z-index: 1000;
     }
 }
 
 @media screen and (max-width: 550px) {
 
     .eark__navbar-links_logo  img{
-        width: 50px;
-        height: 50px;
+        width: 90px;
+        height: 90px;
 
     }
     .eark__navbar {
@@ -167,8 +182,12 @@
     }
 
     .eark__navbar-menu_container {
+        font-size: 22px;
         top: 20px;
+        z-index: 10000;
+        
     }
+    
 
 
 }
