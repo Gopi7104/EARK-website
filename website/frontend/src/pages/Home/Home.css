@@ -7,7 +7,7 @@
     background-image: url('../../assets/hero_img_with_pattern.webp');
     background-size: contain; 
     background-repeat: no-repeat;
-    height: 144vh;
+    height: 154vh;
     background-position: right;
 }
 
@@ -30,7 +30,7 @@
 .home_description{
     width: 500px;
     height: 90px;
-    margin: 50px 0px 0px 99px ;
+    margin: 240px 0px 0px 99px ;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -347,7 +347,7 @@
         height: 108px;
     }
     .home_description{
-        margin-top: 50px;
+        margin-top: 160px;
         margin-left: 35px;
         font-size: 14px;
         width: 280px;

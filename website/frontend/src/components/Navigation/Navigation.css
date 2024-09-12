@@ -173,8 +173,10 @@
 @media screen and (max-width: 550px) {
 
     .eark__navbar-links_logo  img{
-        width: 90px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
+        margin-top: -13px;
+        margin-left: -15px;
 
     }
     .eark__navbar {
