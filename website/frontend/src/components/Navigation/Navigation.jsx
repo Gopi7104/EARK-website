@@ -8,10 +8,10 @@ const Navigation = () => {
   const [activeLink, setActiveLink] = useState('#home');
 
   const links = [
-    { href: '#home', text: 'Home' },
+    { href: '/', text: 'Home' },
     { href: '#about_us', text: 'About Us' },
     { href: '#our_curriculum', text: 'Our Curriculum' },
-    { href: '#our_teachers', text: 'Our Teachers' },
+    { href: '/teacher', text: 'Our Teachers' },
   ];
 
   return (
