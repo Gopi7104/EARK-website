@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import { HiOutlineMenu } from "react-icons/hi";
-import logo from '../../asset/Picture/schlogo.webp';
+import logo from '../../assets/schlogo.webp';
 import './Navigation.css';
 import '../../index.css';
 
@@ -10,10 +10,10 @@ const Navigation = () => {
   const [activeLink, setActiveLink] = useState('#home');
 
   const links = [
-    { href: '#home', text: 'Home' },
+    { href: '/', text: 'Home' },
     { href: "/about", text: 'About Us' },
-    { href: '#our_curriculum', text: 'Our Curriculum' },
-    { href: '#our_teachers', text: 'Our Teachers' },
+    { href: '/curriculum', text: 'Our Curriculum' },
+    { href: '/teacher', text: 'Our Teachers' },
   ];
 
   return (

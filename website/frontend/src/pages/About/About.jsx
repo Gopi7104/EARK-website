@@ -46,7 +46,7 @@ const About = () => {
               />
             )}
              <video className='home_clg_vdo' controls autoPlay muted>
-            <source src={scl_video}  type="video/mp4" />
+            {/* <source src={scl_video}  type="video/mp4" /> */}
           </video>
           </div>
         </div>
