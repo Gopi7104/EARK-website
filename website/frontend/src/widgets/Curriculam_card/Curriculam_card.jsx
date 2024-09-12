@@ -1,7 +1,7 @@
 import React from 'react';
-import './Teachercard.css';
+import './Curriculam_card.css';
 
-const Teachercard = ({ name, image, onKnowMore }) => {
+const Curriculam_card = ({ name, image, onKnowMore }) => {
   return (
     <div className="teacher-card">
       <img src={image} alt={name} className="teacher-image" />
@@ -15,4 +15,4 @@ const Teachercard = ({ name, image, onKnowMore }) => {
   );
 };
 
-export default Teachercard;
+export default Curriculam_card;

@@ -1,7 +1,9 @@
 import th from '../assets/th.jpg';
-import employeeblack from '../assets/employeeblack.webp';
+// import employeeblack from '../assets/images/employeeblack.webp';
 
-export const teacher = [
+
+
+export const Curriculum = [
   {
     name: "Learning and Language Support",
     image: th,

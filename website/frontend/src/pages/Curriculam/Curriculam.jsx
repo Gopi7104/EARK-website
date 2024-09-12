@@ -1,7 +1,8 @@
 import React from 'react';
 import './Curriculam.css';
-import Teachercard from '../../../../../frontend/src/widgets/Teachercard/Teachercard';
-import { teacher } from "../../../../../frontend/src/constants/teacher";
+import Curriculam_card from '../../widgets/Curriculam_card/Curriculam_card';
+
+import { Curriculum } from "../../constants/Curriculum";
 
 
 
@@ -31,8 +32,8 @@ function Curriculam() {
           <p>The Cambridge Primary Curriculum encourages children to be creative and innovative, building their independent thinking skills and allowing them to develop a love of learning. At EARK we give them the advantage of a highly balanced curriculum widely accepted around the globe.</p>
         </div>
         <div className="teachers-grid">
-          {teacher.map((teacherData, index) => (
-            <Teachercard 
+          {Curriculum.map((teacherData, index) => (
+            <Curriculam_card
               key={index} 
               name={teacherData.name} 
               image={teacherData.image} 
