@@ -1,12 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import {BrowserRouter} from 'react-router-dom';
+import App from './App';
 import './index.css';
 // import 'normalize.css';
 import ReactGA from 'react-ga4';
-import App from './App.js'
-import Navigation from './components/Navigation/Navigation.jsx';
-ReactDOM.render(<Navigation/>,document.getElementById('root'));
 
 ReactGA.initialize('G-0HLNW2W47S');
 
@@ -15,4 +13,4 @@ ReactGA.initialize('G-0HLNW2W47S');
             <App/>
         </BrowserRouter>
 
-    );  
+    ); 

@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { HiOutlineMenu } from "react-icons/hi";
 import logo from '../../assets/schlogo.webp';
 import './Navigation.css';
+import '../../index.css';
 
 const Navigation = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [activeLink, setActiveLink] = useState('#home');
+  const [activeLink, setActiveLink] = useState('/');
 
   const links = [
     { href: '/', text: 'Home' },
-    { href: '#about_us', text: 'About Us' },
-    { href: '/curriculam', text: 'Our Curriculum' },
+    { href: '/about', text: 'About Us' },
+    { href: '/curriculum', text: 'Our Curriculum' },
     { href: '/teacher', text: 'Our Teachers' },
   ];
 
@@ -41,8 +43,8 @@ const Navigation = () => {
       </div>
       <div className="eark__navbar-menu">
         {toggleMenu
-          ? <RiCloseLine color="#033A3D" size={27} onClick={() => setToggleMenu(false)} />
-          : <RiMenu3Line color="#033A3D" size={27} onClick={() => setToggleMenu(true)} />}
+          ? <RiCloseLine color="#FCFCFC" size={27} onClick={() => setToggleMenu(false)} />
+          : <HiOutlineMenu color="#FCFCFC" size={27} onClick={() => setToggleMenu(true)} />}
         {toggleMenu && (
         <div className="eark__navbar-menu_container scale-up-center">
           <div className="eark__navbar-menu_container-links">
