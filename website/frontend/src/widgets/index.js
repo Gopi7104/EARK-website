@@ -1,1 +1,3 @@
-export {default as Curriculum_card} from './Curriculum_card/Curriculum_card'
+export {default as Curriculam_card} from './Curriculam_card/Curriculam_card'
+export {default as Teachercard} from './Teachercard/Teachercard'
+export {default as Modal} from './Modal/Modal'
