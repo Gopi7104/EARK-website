@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import "./About.css";
 import "../../index.css";
 
-
 const About = () => {
   const [hovered, setHovered] = useState(false);
 
@@ -21,44 +20,40 @@ const About = () => {
             <h2>Our Vision</h2>
           </div>
           <p>Our mission is to INSPIRE, NOURISH, and SUPPORT our learners.</p>
-          <ul>
+          <ul className='abt__custom-list'>
             <li><span id="abt__card_hgt">Inspire</span> our diverse community of learners to take proactive roles as responsible global citizens.</li>
             <li><span id="abt__card_hgt">Nourish</span> the minds and spirit of our students in a safe, respectful, and caring environment.</li>
             <li><span id="abt__card_hgt">Support</span> students to achieve their individual potential and become well-rounded, life-long learners.</li>
           </ul>
         </div>
       </div>
-
       
-        <div className={`eark__abt_scal_container ${hovered ? "expanded" : ""}`}
+      
+{/* 
+      <div className={`eark__abt_scal_container ${hovered ? "expanded" : ""}`}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-      >
-        <div className={`circle-container ${hovered ? "expanded" : ""}`}>
+      > */}
+        {/* <div className={`circle-container ${hovered ? "expanded" : ""}`}> */}
           <div className="eark__abt_video-container">
-            {hovered && (
-              <video
-                className="eark__abt_video"
-                src="your-video-url.mp4" // Replace with your video URL
-                autoPlay
-                loop
-                muted
-              />
-            )}
-             <video className='home_clg_vdo' controls autoPlay muted>
-            {/* <source src={scl_video}  type="video/mp4" /> */}
-          </video>
+            {/* {hovered && ( */}
+              <iframe
+              src="https://drive.google.com/file/d/1zxYwEzE88Co5DslCMhlpXrQ6CA0pC2rB/preview"
+              className="eark__abt_video"
+              allow="autoplay"
+              title="Video"
+            ></iframe>
+            {/* )} */}
           </div>
-        </div>
+        {/* </div> */}
+      {/* </div> */}
+
+      <div className="abt__school-head">
+        <p>
+        We envision a future where we nurture and guide EARK students to become not only knowledgeable individuals but also happy and compassionate global citizens- Head of school.</p>
+        <p><span id='abt__aut'>- School Head</span></p>
+        
       </div>
-      {/* <div className="eark__abt_school-hd">
-        <p>We envision a future where we nurture and guide EARK students to become not only knowledgeable individuals but also happy and compassionate global citizens- Head of school. 
-        </p>
-        <p>- School Head</p>
-
-      </div> */}
-
-
     </div>
   );
 }

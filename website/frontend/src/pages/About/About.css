@@ -1,67 +1,138 @@
-
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    overflow-x: hidden; 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; 
 }
 
 .eark__abt_main_container {
-    display: flex;
-    /* justify-content: center; */
-
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* position: relative; */
 }
 
 
 .eark__abt_card_holder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin: 130px 80px 20px 110px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+margin: 160px 80px ;
 }
 
 
 .eark__abt_card_heading h2 {
-  margin: 70px 0 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 900; 
-  font-family: var(--font-lato);
-  color: var(--color-primary2);
+margin: 70px 0 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 900; 
+font-family: var(--font-lato);
+color: var(--color-primary2);
+}
+
+
+.eark__abt_card_sml,
+.eark__abt_card_big {
+background-color: #F3F3F3;
+border-radius: 33px;
 }
 
 
 .eark__abt_card_sml {
-  background-color: #F3F3F3;
-  height: 380px;
-  width: 506px;
-  border-radius: 33px;
+height: 380px;
+width: 506px;
 }
 
 
 .eark__abt_card_sml p,
 .eark__abt_card_big p {
-  text-align: justify;
-  text-indent: 40px;
-  font-family: var(--font-lato);
-  font-size: 20px;
-  line-height: 1.8rem;
-  margin: 0 36px;
+text-align: justify;
+text-indent: 40px;
+font-family: var(--font-lato);
+font-size: 20px;
+line-height: 1.8rem;
+margin: 0 36px;
+}
+.eark__abt_card_big li{
+text-align: justify;
+font-family: var(--font-lato);
+font-size: 20px;
+line-height: 1.8rem;
+margin: 0 36px;
+
 }
 
 
-.eark__abt_card_big li {
-  text-indent: 20px;
-  text-align: justify;
-  font-family: var(--font-lato);
-  font-size: 20px;
-  line-height: 1.7rem;
-  margin: 0 36px;
+.eark__abt_card_big {
+width: 714px;
+height: 380px;
 }
 
+
+.eark__abt_scal_container {
+position: absolute;
+margin-top: 20px;
+width: 700px;
+height: 1200px;
+z-index: 1;
+}
+
+
+.circle-container {
+position: absolute;
+left: -8rem;
+top: 36.5rem;
+background-color: var(--color-primary1);
+width: 202px;
+height: 202px;
+border-radius: 50%;
+transition: all 0.5s ease-in-out;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+
+.circle-container.expanded {
+width: 1440px;
+height: 602px;
+border-radius: 35%;
+left: -8rem;
+}
+
+
+.eark__abt_video-container {
+position: relative;
+width: 570px;
+height: 350px;
+display: flex;
+justify-content: right;
+overflow: visible;
+}
+
+
+.eark__abt_video {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: all 0.5s ease-in-out;
+}
+.abt__custom-list {
+  list-style-type: none; /* Remove the default bullets */
+}
+
+.abt__custom-list li::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-primary1); 
+  border-radius: 50%; 
+  margin-right: 10px; 
+}
 
 #abt__card_hgt {
   margin: 0;
@@ -71,92 +142,49 @@
   text-align: justify;
 }
 
-
-.eark__abt_card_big {
-  background-color: #F3F3F3;
-  width: 714px;
-  height: 380px;
-  border-radius: 33px;
-}
-
-
-.eark__abt_scal_container {
-  position: absolute;
-  margin-top: 20px;
-  width: 600px;
-  height: 1200px;
-}
-
-
-.circle-container {
-  position: absolute;
-  left: -8rem;
-  top: 36.5rem;
-  background-color: var(--color-primary1);
-  width: 202px;
-  height: 202px;
-  border-radius: 50%;
-  transition: all 0.5s ease-in-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.circle-container.expanded {
-  width: 900px;
-  height: 602px;
-  border-radius: 35%;
-  left: -8rem;
-}
-
-
-.eark__abt_video-container {
-  position: relative;
-  width: 600px;
-  height: 1200%;
-  border-radius: 40%;
-}
-
-
-.eark__abt_video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-eark__abt_school-hd{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    width: 680px;
-    height: 320px;
-    background-color: #F3F3F3;
+.abt__school-head{
+padding: 80px 0px;
+display: flex;
+flex-direction: column;
+width: 600px;
+height: auto;
+font-family: var(--font-satoshi);
+font-size: 30px;
+font-weight: 200;
+line-height: 2.5rem;
+text-align: center;
 
 
 }
-.home_clg_vdo_holder{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+#abt__aut{
+  
+  color: #FCBB00;
+  font-family: var(--font-satoshi);
+  font-weight: bolder;
+
+
 }
-
-
-
 
 @media screen and (max-width: 768px) {
-  .circle-container.expanded {
-    width: 300px;
-    height: 200px;
-  }
+.circle-container.expanded {
+  width: 300px;
+  height: 200px;
+}
+
+.eark__abt_video {
+  width: 100px;
+  /* height: 200px; */
+}
 }
 
 @media screen and (max-width: 480px) {
-  .circle-container.expanded {
-    width: 200px;
-    height: 150px;
-  }
+.circle-container.expanded {
+  width: 200px;
+  height: 150px;
 }
 
-
+.eark__abt_video {
+  width: 350px;
+  /* height: 150px; */
+}
+}
