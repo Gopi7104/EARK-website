@@ -10,7 +10,7 @@ const Navigation = () => {
   const links = [
     { href: '/', text: 'Home' },
     { href: '#about_us', text: 'About Us' },
-    { href: '#our_curriculum', text: 'Our Curriculum' },
+    { href: '/curriculam', text: 'Our Curriculum' },
     { href: '/teacher', text: 'Our Teachers' },
   ];
 
