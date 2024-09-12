@@ -4,6 +4,8 @@
     align-items: center;
 
     padding: 1rem 2rem;
+    position: relative; /* Add this if not present */
+        z-index: 1000;
 }
 
 
@@ -141,6 +143,17 @@
 
     }
     
+}
+
+@media screen and (max-width: 760px){
+    .eark__navbar-links_logo img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .eark__navbar{
+        padding: 32px 32px 0px;
+    }
 }
 
 @media screen and (max-width: 760px) {
