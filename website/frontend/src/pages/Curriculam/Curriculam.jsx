@@ -1,7 +1,7 @@
 import React from 'react';
 import './Curriculam.css';
-import Teachercard from '../../widgets/Teachercard/Teachercard';
-import { teacher } from "../../constants/teacher";
+import Teachercard from '../../../../../frontend/src/widgets/Teachercard/Teachercard';
+import { teacher } from "../../../../../frontend/src/constants/teacher";
 
 
 

@@ -1,1 +1,0 @@
-export {default as Curriculam} from './Curriculam/Curriculam'
