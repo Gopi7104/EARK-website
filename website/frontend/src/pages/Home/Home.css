@@ -187,7 +187,7 @@
 
 @media(max-width:1030px){
     .home_hero_container{
-        height: 88vh;
+        height: 118vh;
     }
     .scl_name{
         font-size: 60px;
@@ -197,7 +197,7 @@
         padding-top: 125px;
     }
     .home_description{
-        margin-top: -50px;
+        margin-top: 70px;
         font-size: 20px;
         width: 300px;
         line-height: 25px;
@@ -259,7 +259,7 @@
         padding-left: 48px;
     }
     .home_description{
-        margin-top: -100px;
+        margin-top: -10px;
         font-size: 18px;
         width: 280px;
         line-height: 24px;
