@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./About.css";
 import "../../index.css";
-import scl_video from "../../asset/video/Video.mp4"
+
 
 const About = () => {
   const [hovered, setHovered] = useState(false);
