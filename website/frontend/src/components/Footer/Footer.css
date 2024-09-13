@@ -101,17 +101,18 @@ list-style-type: none;
     }
 
     .footer_heading{
-      font-size: 30px;
+      font-size: 26px;
     }
     .footer_info{
-      font-size: 18px;
+      font-size: 16px;
+      margin-top: 0px;
     }
     .footer_icon{
       height: 36px;
       width: 36px;
     }
     .footer_heading_underline{
-      width: 17.5rem;
+      width: 14.3rem;
     }
     .footer_logo img{
       position: relative;

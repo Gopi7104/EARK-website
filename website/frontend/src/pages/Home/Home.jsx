@@ -1,6 +1,18 @@
-import React from 'react';
+import { useState,React } from 'react';
 import './Home.css'
  const Home = () => {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [mobile, setMobile] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = () => {
+    const mailtoLink = `mailto:earkinternationalschool@zambia.co.zm?subject=Contact from ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AMobile: ${mobile}%0D%0AMessage: ${message}`;
+    window.location.href = mailtoLink;
+  };
+
+
   return (
     <div className='home'>
         <div className='home_hero_container'>
@@ -26,22 +38,42 @@ import './Home.css'
         </div>
         <div className='home_form_outer'>
         <div className='home_form'>
-          <div className='home_form_details home_form_name'>
-            <input type="text" placeholder='Name'/>
-          </div>
-          <div className='home_form_details home_form_mail'>
-            <input type="email" placeholder='Email adderss'/>
-          </div>
-          <div className='home_form_details home_form_mobile'>
-            <input type="tel" placeholder='Mobile number'/>
-          </div>
-          <div className='home_form_message home_form_msg'>
-            <textarea id='msg_text' placeholder='Message'/>
-          </div>
-          <div className='home_form_btn'>
-            <button>Submit</button>
-          </div>
+        <div className='home_form_details home_form_name'>
+          <input 
+            type="text" 
+            placeholder='Name' 
+            value={name} 
+            onChange={(e) => setName(e.target.value)} 
+          />
         </div>
+        <div className='home_form_details home_form_mail'>
+          <input 
+            type="email" 
+            placeholder='Email address' 
+            value={email} 
+            onChange={(e) => setEmail(e.target.value)} 
+          />
+        </div>
+        <div className='home_form_details home_form_mobile'>
+          <input 
+            type="tel" 
+            placeholder='Mobile number' 
+            value={mobile} 
+            onChange={(e) => setMobile(e.target.value)} 
+          />
+        </div>
+        <div className='home_form_message home_form_msg'>
+          <textarea 
+            id='msg_text' 
+            placeholder='Message' 
+            value={message} 
+            onChange={(e) => setMessage(e.target.value)} 
+          />
+        </div>
+        <div className='home_form_btn'>
+          <button onClick={handleSubmit}>Submit</button>
+        </div>
+      </div>
         </div>
     </div>
   )

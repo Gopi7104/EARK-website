@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import {  RiCloseLine } from 'react-icons/ri';
 import { HiOutlineMenu } from "react-icons/hi";
 import logo from '../../assets/schlogo.webp';
 import './Navigation.css';
