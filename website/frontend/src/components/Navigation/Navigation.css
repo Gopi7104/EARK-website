@@ -2,11 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 4rem;
-    z-index: 100;
-        position: relative; /* Add this if not present */
-        z-index: 1000; /* Ensure it's not conflicting with other elements */
-    
+
+    padding: 1rem 2rem;
+    position: relative; /* Add this if not present */
+        z-index: 1000;
 }
 
 
@@ -15,24 +14,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
 }
 
 .eark__navbar-links_logo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    box-shadow:6px 6px 5px rgba(0, 0, 0, 0.15) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 2rem;
 }
 
 .eark__navbar-links_logo img {
-    width: 80px;
-    height: 80px;
+    width: 100%;
+    height: auto;
     border-radius: 50%;
-    box-shadow: 1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
-    4.7px 4.7px 5.3px rgba(0, 0, 0, 0.05), 8.8px 8.8px 10px rgba(0, 0, 0, 0.042),
-    15.6px 15.6px 17.9px rgba(0, 0, 0, 0.035),
-    29.2px 29.2px 33.4px rgba(0, 0, 0, 0.028),
-    70px 70px 80px rgba(0, 0, 0, 0.02),
-    inset -1px -1px 3px -1px rgba(0, 0, 0, 0.3), 
-    inset 3px 4px 10px 0px rgba(0, 0, 0, 0.3);   
+   
 
 }
 
@@ -46,7 +46,6 @@
 
 .eark__navbar-links_container p a
  {
-    z-index: 100;
     text-decoration: none;
     color: black;
     font-family: var(--font-satoshi);
@@ -61,13 +60,20 @@
 }
 .eark__navbar-menu {
     margin-left: 1rem;
-    z-index: 100;
+
     display: none;
     position: relative;
 }
 
 .eark__navbar-menu svg {
+    background-color: var(--color-primary2);
     cursor: pointer;
+
+    transform: scale(1.2); 
+    border-radius: 8px;
+    padding: 3px;
+    width: 25px;
+    height: 25px;
 }
 
 .eark__navbar-menu_container {
@@ -76,31 +82,25 @@
     align-items: center;
     flex-direction: column;
     text-decoration: none;
+    
     text-align: center;
+    /* background:; */
     padding: 1rem;
     position: absolute;
-    z-index: 9999; /* Increased z-index to be above other elements */
     right: 0;
     top: 40px;
     margin-top: 1rem;
-    min-width: 310px;
-    height: 50vh;
+    min-width: 210px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
-    background-color: white; /* Ensure the background is not transparent */
-}
-.eark__navbar-menu {
-    z-index: 10000; /* Ensure the menu icon has a high enough z-index */
 }
 
 .eark__navbar-menu_container p {
     margin: 1rem 0;
-    z-index: 100;
 }
 
 .eark__navbar-links a,
 .eark__navbar-menu_container-links a {
-    z-index: 100;
   text-decoration: none;
   color: black; 
   padding: 10px 20px;
@@ -116,7 +116,6 @@
 
 /* Styles for navbar links container (for both desktop and mobile) */
 .eark__navbar-links_container {
-    z-index: 1000;
   display: flex;
   align-items: center;
   /* gap: 10px;  */
@@ -124,32 +123,40 @@
 
 
 .eark__navbar-menu_container {
-    z-index: 1000;
-  /* display: none;  */
+  display: none; 
 }
 
 
 .eark__navbar-menu_container.scale-up-center {
   display: block; 
-  
-  z-index: 1000;
-  position:absolute;
 }
 
 .eark__navbar-menu_container-links p {
-
   margin: 0;
 }
+
 @media  screen and (max-width:970px) {
     .eark__navbar-links_container p a{
         font-size: 16px;
         padding:  1rem 0.5rem;
-        gap: 80px;
+        gap: 80px; 
+
     }
     
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 760px){
+    .eark__navbar-links_logo img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .eark__navbar{
+        padding: 32px 32px 0px;
+    }
+}
+
+@media screen and (max-width: 760px) {
 
     .eark__navbar-links_logo  img{
         width: 70px;
@@ -167,17 +174,28 @@
 
     .eark__navbar-menu {
         display: flex;
-        z-index: 1000;
     }
 }
 
 @media screen and (max-width: 550px) {
+    .eark__navbar-menu svg {
+        width: 21px;
+        height: 21px;
+
+
+    }
+    .eark__navbar-links_logo{
+        width: 70px;
+        height: 70px;
+    }
 
     .eark__navbar-links_logo  img{
-        width: 100px;
-        height: 100px;
-        margin-top: -13px;
-        margin-left: -15px;
+        width: 70px;
+        height: 70px;
+        /* //incoming change */
+        /* margin-top: -13px;
+        margin-left: -15px; */
+
 
     }
     .eark__navbar {
@@ -185,12 +203,8 @@
     }
 
     .eark__navbar-menu_container {
-        font-size: 22px;
         top: 20px;
-        z-index: 10000;
-        
     }
-    
 
 
 }

@@ -147,7 +147,7 @@
     padding-left: 20px;
 }
 
-.home_form_message input{
+.home_form_message #msg_text{
     width: 771.74px;
     height: 200.55px;
     box-shadow: -4px -4px 6px rgba(255, 255, 255, 0.7), 1px 1px 5px rgba(0, 0, 0, 0.1), 5px 5px 10px rgba(0, 0, 0, 0.25);
@@ -158,13 +158,9 @@
     font-size: 20px;
     line-height: 27px;
     box-sizing: border-box;
-    padding-left: 20px;
+    padding: 20px;
 }
 
-
-.home_form_msg::placeholder{
-    margin-top: none;
-}
 
 .home_form_btn button{
     width: 345.43px;
@@ -179,15 +175,41 @@
     cursor: pointer;
 }
 
-@media(max-width:1440px){
+@media(max-width:1230px){
     .home_hero_container{
-        height: 107vh;
+        height: 138vh;
     }
+    .scl_name{
+        font-size: 68px;
+    }
+    .home_scl_name{
+        padding-top: 135px;
+    }
+    .home_description{
+        margin-top: 130px;
+        font-size: 20px;
+        width: 350px;
+        line-height: 25px;
+        text-align: justify;
+    }
+    .home_apply_btn,.home_broucher_btn{
+        width: 300px;
+        height: 40px;
+        font-size: 18px; 
+        border-radius: 12px;
+    }
+    .home_broucher_btn{
+        margin-top: 35px;
+    }
+    .home_img_btns{
+        margin-top: 50px;
+    }
+    
 }
 
-@media(max-width:1030px){
+@media(max-width:1100px){
     .home_hero_container{
-        height: 118vh;
+        height: 130vh;
     }
     .scl_name{
         font-size: 60px;
@@ -227,12 +249,12 @@
     .home_form{
         margin: 60px 0px 60px 0px;
     }
-    .home_form_details input{
+    .home_form_details input,.home_form_details #msg_text{
         width: 550px;
         height: 46px;
         font-size: 18px;
     }
-    .home_form_message input{
+    .home_form_message input,.home_form_message #msg_text{
         width: 550px;
         height: 200px;
         font-size: 18px;
@@ -301,12 +323,12 @@
     .home_form{
         margin: 140px 0px 40px 0px;
     }
-    .home_form_details input{
+    .home_form_details input,.home_form_details #msg_text{
         width: 450px;
         height: 36px;
         font-size: 16px;
     }
-    .home_form_message input{
+    .home_form_message input,.home_form_message #msg_text{
         width: 450px;
         height: 150px;
         font-size: 16px;
@@ -392,7 +414,7 @@
         margin-top: 170px;
         margin-bottom: 20px;
     }
-    .home_form input{
+    .home_form input,.home_form #msg_text{
         width: 320px;
         font-size: 14px;
     }
@@ -413,6 +435,12 @@
 }
 
 @media(max-width:324px){
+    .scl_name{
+        font-size: 35px;
+    }
+    .home_description{
+        width: 250px;
+    }
     .home_apply_btn,.home_broucher_btn{
         width: 130px;
     }
@@ -420,7 +448,7 @@
         margin-top: 300px;
         margin-bottom: 20px;
     }
-    .home_form input{
-        width: 280px;
+    .home_form input ,.home_form #msg_text{
+        width: 270px;
     }
 }

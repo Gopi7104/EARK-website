@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
 
 :root{
 
     --font-satoshi:'Satoshi', sans-serif;
+    --font-lato:'Lato',sans-serif;
     
     --color-primary1:#0BB3BD;
     --color-primary2:#076B71;
