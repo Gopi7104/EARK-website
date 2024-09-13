@@ -56,6 +56,10 @@ function Curriculam() {
           <h1>Focus On Sustainability and Global Citizenship</h1>
           <p>Our curriculum is enriched by strong collaboration with parents and the local community. Regular interactions, workshops, and volunteering opportunities create a vibrant learning ecosystem that extends learning beyond the school walls.</p>
         </div>
+        <div className='curriculum_box4'>
+        <h1>A Journey Towards Lifelong Learning</h1>
+        <p>At EARK International School, our curriculum is more than a set of subjects; it’s a journey towards lifelong learning. We provide a nurturing environment where students are encouraged to explore, question, and discover. Our commitment to excellence, innovation, and holistic development sets us apart as a leading educational institution in Zambia.</p>
+        </div>
       </div>
       
     

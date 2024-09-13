@@ -5,7 +5,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* overflow-x: hidden; */
+
 }
 
 /* About Section */
@@ -203,7 +203,7 @@
 .card_six:hover .Gallery_image,
 .card_seven:hover .Gallery_image {
   transform: scale(1.1);
-  transition: all 1.5s;
+  transition: all(1.5s);
 }
 
 .Gallery_heading {
@@ -304,9 +304,62 @@
     width: 100px;
   }
 }
-/* 
+
 @media screen and (max-width: 480px) {
   .circle-container.expanded {
-    width: 200px
-  } */
-   
+    width: 200px;
+    height: 150px;
+  }
+  
+  .eark__abt_video {
+    width: 350px;
+  }
+}
+
+/* Gallery Section Responsive */
+@media (max-width: 800px) {
+  .Gallery_grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card_two, .card_one, .card_three, 
+  .card_four, .card_eight, .card_six, 
+  .card_five, .card_seven {
+    grid-column: span 9;
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .Gallery_whole_container {
+    padding: 0;
+  }
+
+  .card_one {
+    grid-column: span 6;
+    grid-row: span 17;
+  }
+
+  .card_two {
+    grid-column: span 6;
+    grid-row: span 20;
+  }
+
+  .card_three, .card_four, 
+  .card_five, .card_six, 
+  .card_seven, .card_eight {
+    grid-column: span 6;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+  .Gallery_grid {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .card_one {
+    grid-column: span ;
+  }
+}

@@ -4,16 +4,18 @@ import "./About.css";
 import "../../index.css";
 
 // Importing images
-import galleryten from "../../assets/galleryten.jpg";
-import gallerynine from "../../assets/gallerynine.jpg";
-import galleryeight from "../../assets/galleryeight.jpg";
-import galleryseven from "../../assets/galleryseven.jpg";
-import gallerysix from "../../assets/gallerysix.jpg";
-import galleryfive from "../../assets/galleryfive.jpg";
-import galleryfour from "../../assets/galleryfour.jpg";
-import gallerythree from "../../assets/gallerythree.jpg";
-import gallerytwo from "../../assets/gallerytwo.jpg";
-import galleryone from "../../assets/galleryone.jpg";
+import galleryten from '../../assets/galleryten.jpg';
+import gallerynine from '../../assets/gallerynine.jpg';
+import galleryeight from '../../assets/galleryeight.jpg';
+import galleryseven from '../../assets/galleryseven.jpg';
+import gallerysix from '../../assets/gallerysix.jpg';
+import galleryfive from '../../assets/galleryfive.jpg';
+import galleryfour from '../../assets/galleryfour.jpg';
+import gallerythree from '../../assets/gallerythree.jpg';
+import gallerytwo from '../../assets/gallerytwo.jpg';
+import galleryone from '../../assets/galleryone.jpg';
+import missionIcon from '../../assets/mission_icon.svg';
+import visionIcon from '../../assets/mission_icon.svg';
 
 // Array of images to rotate in the gallery
 const images = [
