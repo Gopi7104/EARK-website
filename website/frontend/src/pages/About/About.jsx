@@ -15,7 +15,7 @@ import gallerythree from '../../assets/gallerythree.jpg';
 import gallerytwo from '../../assets/gallerytwo.jpg';
 import galleryone from '../../assets/galleryone.jpg';
 import missionIcon from '../../assets/mission_icon.svg';
-import visionIcon from '../../assets/mission_icon.svg';
+import vissionIcon from '../../assets/vission_icon.svg';
 
 // Array of images to rotate in the gallery
 const images = [
@@ -61,6 +61,9 @@ const About = () => {
     <div className="eark__abt_main_container">
       <div className="eark__abt_card_holder">
         <div className="eark__abt_card_sml">
+          <div className="eark__abt_svg-logo-container">
+            <img src={missionIcon} alt="Mission Icon " />
+          </div>
           <div className="eark__abt_card_heading">
             <h2>Our Mission</h2>
           </div>
@@ -68,6 +71,9 @@ const About = () => {
         </div>
 
         <div className="eark__abt_card_big">
+        <div className="eark__abt_svg-logo-container">
+            <img src={vissionIcon} alt="Vission Icon " />
+          </div>
           <div className="eark__abt_card_heading">
             <h2>Our Vision</h2>
           </div>
