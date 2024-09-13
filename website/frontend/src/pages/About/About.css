@@ -1,73 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
 
-/* General Styles */
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+}
+.eark__abt_main_container,
+.eark__abt_card_holder {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
-/* About Section */
 .eark__abt_main_container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+  padding: 20px;
 }
 
 .eark__abt_card_holder {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin: 160px 80px;
+  justify-content: space-between;
+  align-items: stretch; /* Ensures both containers have equal height */
+  gap: 20px; /* Adjust as needed for spacing between containers */
+  margin-bottom: 20px; /* Adds spacing below the card holder */
 }
 
-.eark__abt_card_heading h2 {
-  margin: 70px 0 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 900;
-  font-family: var(--font-lato);
-  color: var(--color-primary2);
+/* Style for smaller card */
+.eark__abt_card_sml {
+  background-color: #f3f3f3;
+  border-radius: 15px; /* Adjust as needed */
+  padding: 20px;
+  flex: 1; /* Ensures it grows to fill available space */
+  box-sizing: border-box;
 }
 
-.eark__abt_card_sml,
+/* Style for larger card */
 .eark__abt_card_big {
   background-color: #f3f3f3;
-  border-radius: 33px;
+  border-radius: 15px; /* Adjust as needed */
+  padding: 20px;
+  flex: 2; /* Ensures it grows to fill available space */
+  box-sizing: border-box;
 }
 
-.eark__abt_card_sml {
-  height: 380px;
-  width: 506px;
+.eark__abt_card_heading{
+  text-align: center;
+  padding-bottom: 10px;
+  color: #006b6b;
 }
+
 
 .eark__abt_card_sml p,
 .eark__abt_card_big p {
-  text-align: justify;
-  text-indent: 40px;
-  font-family: var(--font-lato);
-  font-size: 20px;
-  line-height: 1.8rem;
-  margin: 0 36px;
+  padding: 10px; /* Add padding around text */
+  line-height: 2.0; /* Add spacing between lines for better readability */
 }
-
-.eark__abt_card_big li {
-  text-align: justify;
-  font-family: var(--font-lato);
-  font-size: 20px;
-  line-height: 1.8rem;
-  margin: 0 36px;
-}
-
-.eark__abt_card_big {
-  width: 714px;
-  height: 380px;
-}
-
 .eark__abt_scal_container {
   position: absolute;
   margin-top: 20px;
@@ -288,7 +282,78 @@
   .eark__abt_video {
     width: 100px;
   }
+  
+  .eark__abt_card_holder {
+    flex-direction: column;
+    margin: 20px;
+  }
+  
+  .eark__abt_card_sml,
+  .eark__abt_card_big {
+    width: 100%; /* Full width for small screens */
+  }
 }
+
+/* Keep text wrapping consistent */
+.eark__abt_card_sml p,
+.eark__abt_card_big p {
+  padding: 10px;
+  line-height: 1.6; /* Adjust line-height for smaller screens */
+  text-align: justify; /* Ensure text looks evenly spaced */
+  word-wrap: break-word; /* Break long words to avoid text overflow */
+}
+ 
+  
+  
+  /* Responsive text adjustments */
+  @media screen and (max-width: 480px) {
+    .eark__abt_card_sml p,
+    .eark__abt_card_big p {
+      font-size: 14px; /* Reduce text size for very small screens */
+      padding: 8px;
+    }
+  
+   
+      .eark__abt_card_holder {
+        padding: 10px 10px; 
+        padding-left: 30px;/* Adjust padding as necessary */
+      }
+      
+      .eark__abt_card_sml, .eark__abt_card_big {
+        width: 100%; /* Ensure cards take full width */
+        margin: 0; /* Remove margins */
+      }
+      
+      .eark__abt_card_heading {
+        text-align: center; /* Center heading text for small screens */
+      }
+  }
+  /* Adjust layout for smaller screens */
+  @media (max-width: 560px) {
+    .eark__abt_card_holder {
+      flex-direction: column;
+    }
+    
+    .eark__abt_card_sml,
+    .eark__abt_card_big {
+      width: 100%;
+      margin: 0; 
+      padding: 10px 0px; /* Stack cards vertically */
+      /* Remove margins that might cause overflow */
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .eark__abt_card_holder {
+      flex-direction: column; /* Stack vertically on smaller screens */
+    }
+  
+    .eark__abt_card_sml,
+    .eark__abt_card_big {
+      width: 100%; /* Full width for smaller screens */
+    }
+  }
+
 /* 
 @media screen and (max-width: 480px) {
   .circle-container.expanded {
