@@ -147,7 +147,7 @@
     padding-left: 20px;
 }
 
-.home_form_message textarea{
+.home_form_message #msg_text{
     width: 771.74px;
     height: 200.55px;
     box-shadow: -4px -4px 6px rgba(255, 255, 255, 0.7), 1px 1px 5px rgba(0, 0, 0, 0.1), 5px 5px 10px rgba(0, 0, 0, 0.25);
@@ -249,12 +249,12 @@
     .home_form{
         margin: 60px 0px 60px 0px;
     }
-    .home_form_details input,.home_form_details textarea{
+    .home_form_details input,.home_form_details #msg_text{
         width: 550px;
         height: 46px;
         font-size: 18px;
     }
-    .home_form_message input,.home_form_message textarea{
+    .home_form_message input,.home_form_message #msg_text{
         width: 550px;
         height: 200px;
         font-size: 18px;
@@ -323,12 +323,12 @@
     .home_form{
         margin: 140px 0px 40px 0px;
     }
-    .home_form_details input,.home_form_details textarea{
+    .home_form_details input,.home_form_details #msg_text{
         width: 450px;
         height: 36px;
         font-size: 16px;
     }
-    .home_form_message input,.home_form_message textarea{
+    .home_form_message input,.home_form_message #msg_text{
         width: 450px;
         height: 150px;
         font-size: 16px;
@@ -414,7 +414,7 @@
         margin-top: 170px;
         margin-bottom: 20px;
     }
-    .home_form input,.home_form textarea{
+    .home_form input,.home_form #msg_text{
         width: 320px;
         font-size: 14px;
     }
@@ -448,7 +448,7 @@
         margin-top: 300px;
         margin-bottom: 20px;
     }
-    .home_form input ,.home_form textarea{
+    .home_form input ,.home_form #msg_text{
         width: 270px;
     }
 }
