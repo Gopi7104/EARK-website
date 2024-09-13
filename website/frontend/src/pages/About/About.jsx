@@ -14,8 +14,6 @@ import galleryfour from '../../assets/galleryfour.jpg';
 import gallerythree from '../../assets/gallerythree.jpg';
 import gallerytwo from '../../assets/gallerytwo.jpg';
 import galleryone from '../../assets/galleryone.jpg';
-import missionIcon from '../../assets/mission_icon.svg';
-import visionIcon from '../../assets/mission_icon.svg';
 
 // Array of images to rotate in the gallery
 const images = [
