@@ -36,7 +36,7 @@ import './Home.css'
             <input type="tel" placeholder='Mobile number'/>
           </div>
           <div className='home_form_message home_form_msg'>
-            <input type="text" placeholder='Message'/>
+            <textarea placeholder='Message'/>
           </div>
           <div className='home_form_btn'>
             <button>Submit</button>
