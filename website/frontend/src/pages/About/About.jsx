@@ -111,6 +111,7 @@ const About = () => {
   const combinedStyle = { ...baseStyle, ...dynamicStyle };
 
   return (
+    <div className="abt_main">
     <div className="eark__abt_main_container">
       <div className="eark__abt_card_holder">
         <div className="eark__abt_card_sml">
@@ -174,7 +175,7 @@ const About = () => {
           <span id="abt__aut">- School Head</span>
         </p>
       </div>
-
+   </div>
       <div className="Gallery_whole">
         <div className="Gallery_whole_container">
           <div className="Gallery_heading">
@@ -247,7 +248,8 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      
   );
 };
 
