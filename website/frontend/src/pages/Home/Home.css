@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.home{
+    padding-top:100px;
+}
+
 .home_hero_container{
     background-image: url('../../assets/hero_img_with_pattern.webp');
     background-size: contain; 
@@ -272,6 +276,9 @@
 }
 
 @media(max-width:780px){
+    .home{
+        padding-top: 130px;
+    }
     .home_hero_container{
         height: 88vh;
     }
@@ -432,9 +439,6 @@
         font-size: 16px;
         margin-top: 30px;
     }
-    /* .home_form{
-        margin-top:0px;
-    } */
 }
 
 @media(max-width:324px){

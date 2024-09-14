@@ -7,7 +7,7 @@
     background-color: #ffff;
     width: 100%;
     /* position: relative; Add this if not present */
-        z-index: 1000;
+        z-index: 500;
 }
 
 
