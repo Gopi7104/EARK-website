@@ -29,8 +29,9 @@
   display: flex;
   align-items: center;
   position: relative;
-  margin: 0;
-  
+  /* margin-top: 70px; */
+ top: 130px;
+ margin-bottom: 150px;
   overflow: hidden;
 }
 
@@ -234,11 +235,16 @@
   }
   
 }
+@media(max-width:425){
+  .curriculam_header{
+    height: 15vh;
+  }
+}
 
 /* Phone view (up to 480px wide) */
 @media (max-width: 480px) {
   .curriculum_page{
-    padding-top: 120px;
+    padding-top: 0px;
   }
   .curriculam_header{
     height: 35vh;
@@ -292,6 +298,12 @@
   }
 
   }
+
+@media(max-width:320px){
+  .curriculam_header{
+    height: 20vh;
+  }
+}
 
 /* For screens between 320px and 750px */
 @media (min-width: 320px) and (max-width: 900px) {
