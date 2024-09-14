@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 60px;
 }
 
 .eark__abt_card_holder {
@@ -86,7 +87,7 @@
 .circle-container {
   position: absolute;
   left: -8rem;
-  top: 49.5rem;
+  top: 43.8rem;
   background-color: var(--color-primary1);
   width: 202px;
   height: 202px;
@@ -299,12 +300,14 @@
 
 @media screen and (max-width: 1024px){
   .eark__abt_video-container{
-    width: 770px;
+    width: 755px;
+    height: 415px;
   }
   .circle-container.expanded{
-    width: 1040px;
-  height: 602px;
+    width: 800px;
+  height: 560px;
   border-radius: 25%;
+  margin-left: -6rem;
   }
   .eark__abt_card_holder {
     gap: 25px;
@@ -339,14 +342,6 @@
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  .circle-container.expanded {
-    width: 300px;
-    height: 200px;
-  }
-  
-  .eark__abt_video {
-    width: 100px;
-  }
   .eark__abt_card_holder {
     display: flex;
     flex-direction: column;
@@ -381,7 +376,7 @@
 
 .circle-container {
   position: absolute;
-  top: 73.5rem;
+  top: 68.5rem;
   background-color: var(--color-primary1);
   border-radius: 50%;
   transition: all 1s ease-in-out;
@@ -395,7 +390,7 @@
   width: 500px;
   height: 402px;
   border-radius: 25%;
-  left: -3.8rem;
+  margin-left: 2.8rem;
 }
 
 .eark__abt_video-container {
@@ -405,7 +400,7 @@
   display: flex;
   justify-content: right;
   overflow: visible;
-  margin-right:170px;
+  margin-right:300px;
 }
 
 .eark__abt_video {
@@ -425,6 +420,9 @@
 }
 
 @media screen and (max-width: 440px) {
+  .eark__abt_main_container{
+    padding-top: 130px;
+  }
   .mission_logo,.vision_logo{
     margin-top: -45px;
     margin-left: 30px;
@@ -467,7 +465,7 @@
   font-size: 22px;
 }
   .circle-container {
-    top: 60.5rem;
+    top: 59.8rem;
     border-radius: 50%;
   }
   
@@ -476,7 +474,7 @@
     height: 260px;
     margin-top: -10px;
     border-radius: 25%;
-    left: -5rem;
+    left: -8rem;
   }
   
   .eark__abt_video-container {

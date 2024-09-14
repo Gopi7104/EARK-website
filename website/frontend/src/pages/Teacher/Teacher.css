@@ -5,7 +5,7 @@
 
 /* General Styles */
 .teachers-section {
-  padding:90px 160px 0px 90px;
+  padding:200px 160px 0px 90px;
   box-sizing: border-box;
 }
 
@@ -76,6 +76,7 @@
   
 
   @media (min-width: 901px) {
+    
     .teachers-grid {
       justify-content: space-around;
     }
@@ -86,6 +87,7 @@
   
   
   @media (max-width: 900px) and (min-width: 601px) {
+    
     .teachers-grid {
       justify-content: center;
     }
@@ -108,7 +110,11 @@
     
   }
   
-  
+  @media(max-width:768px){
+    .teachers-section{
+      padding-top: 200px;
+    }
+  }
 
   @media (max-width: 500px) {
     .teachers-grid {
@@ -134,6 +140,12 @@
       font-size: 16px;
       line-height: 1.5rem;
       padding-right: 5px;
+    }
+  }
+
+  @media(max-width:440px){
+    .teachers-section{
+      padding-top: 150px;
     }
   }
   

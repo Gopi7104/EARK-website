@@ -2,9 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: fixed;
     padding: 1rem 2rem;
-    position: relative; /* Add this if not present */
+    background-color: #ffff;
+    width: 100%;
+    /* position: relative; Add this if not present */
         z-index: 1000;
 }
 
@@ -167,7 +169,7 @@
 
     }
     .eark__navbar{
-        padding: 2rem;
+        /* padding: 2rem; */
     }
 
     .eark__navbar-links_container {
@@ -181,20 +183,23 @@
 }
 
 @media screen and (max-width: 550px) {
+    .eark__navbar-links{
+        margin: -15px 0px -20px -20px;
+    }
     .eark__navbar-menu svg {
-        width: 21px;
-        height: 21px;
+        width: 25px;
+        height: 25px;
 
 
     }
     .eark__navbar-links_logo{
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
     }
 
     .eark__navbar-links_logo  img{
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
         /* //incoming change */
         /* margin-top: -13px;
         margin-left: -15px; */

@@ -9,7 +9,7 @@ import { Curriculum } from "../../constants/Curriculum";
 
 function Curriculam() {
   return (
-    <div>
+    <div className='curriculum_page'>
       <div className='curriculam_header'>
         <div>Our <span className='curriculum_name'>Curriculam</span> at</div>
         <div> EARK International</div>
