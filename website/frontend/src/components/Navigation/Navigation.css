@@ -114,6 +114,7 @@
   color: var(--color-primary1); 
 }
 
+
 /* Styles for navbar links container (for both desktop and mobile) */
 .eark__navbar-links_container {
   display: flex;
@@ -129,6 +130,8 @@
 
 .eark__navbar-menu_container.scale-up-center {
   display: block; 
+  z-index: 1000;
+  background-color: #ffff;
 }
 
 .eark__navbar-menu_container-links p {

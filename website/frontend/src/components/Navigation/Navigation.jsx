@@ -7,16 +7,16 @@ import '../../index.css';
 
 const Navigation = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [activeLink, setActiveLink] = useState('/');
+  const [activeLink, setActiveLink] = useState(window.location.pathname);
 
   const links = [
-    { href: '/', text: 'Home' },
-    { href: '/about', text: 'About Us' },
-    { href: '/curriculum', text: 'Our Curriculum' },
-    { href: '/teacher', text: 'Our Teachers' },
+    { hrefVal: '/', text: 'Home' },
+    { hrefVal: '/about', text: 'About Us' },
+    { hrefVal: '/curriculum', text: 'Our Curriculum' },
+    { hrefVal: '/teacher', text: 'Our Teachers' },
   ];
 
-  return (
+  return (  
     <div className="eark__navbar">
       <div className="eark__navbar-links">
         <a href="/">
@@ -25,15 +25,15 @@ const Navigation = () => {
         </div>
         </a>
         <div className="eark__navbar-links_container">
-          {links.map(({ href, text }) => (
-            <p key={href}>
+          {links.map(({ hrefVal, text }) => (
+            <p key={hrefVal}>
               <a
-                href={href}
-                className={activeLink === href ? 'active' : ''}
+                href={hrefVal}
                 onClick={() => {
-                  setActiveLink(href);
+                  setActiveLink(hrefVal);
                   setToggleMenu(false); 
                 }}
+                className={activeLink === hrefVal ? 'active' : ''}
               >
                 {text}
               </a>
@@ -48,13 +48,13 @@ const Navigation = () => {
         {toggleMenu && (
         <div className="eark__navbar-menu_container scale-up-center">
           <div className="eark__navbar-menu_container-links">
-            {links.map(({ href, text }) => (
-              <p key={href}>
+            {links.map(({ hrefVal, text }) => (
+              <p key={hrefVal}>
                 <a
-                  href={href}
-                  className={activeLink === href ? 'active' : ''}
+                  href={hrefVal}
+                  className={activeLink === hrefVal ? 'active' : ''}
                   onClick={() => {
-                    setActiveLink(href);
+                    setActiveLink(hrefVal);
                     setToggleMenu(false); 
                   }}
                 >

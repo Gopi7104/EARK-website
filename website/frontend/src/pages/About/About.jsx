@@ -4,18 +4,18 @@ import "./About.css";
 import "../../index.css";
 
 // Importing images
-import galleryten from '../../assets/galleryten.jpg';
-import gallerynine from '../../assets/gallerynine.jpg';
-import galleryeight from '../../assets/galleryeight.jpg';
-import galleryseven from '../../assets/galleryseven.jpg';
-import gallerysix from '../../assets/gallerysix.jpg';
-import galleryfive from '../../assets/galleryfive.jpg';
-import galleryfour from '../../assets/galleryfour.jpg';
-import gallerythree from '../../assets/gallerythree.jpg';
-import gallerytwo from '../../assets/gallerytwo.jpg';
-import galleryone from '../../assets/galleryone.jpg';
-import missionIcon from '../../assets/mission_icon.svg';
-import visionIcon from '../../assets/mission_icon.svg';
+import galleryten from "../../assets/galleryten.jpg";
+import gallerynine from "../../assets/gallerynine.jpg";
+import galleryeight from "../../assets/galleryeight.jpg";
+import galleryseven from "../../assets/galleryseven.jpg";
+import gallerysix from "../../assets/gallerysix.jpg";
+import galleryfive from "../../assets/galleryfive.jpg";
+import galleryfour from "../../assets/galleryfour.jpg";
+import gallerythree from "../../assets/gallerythree.jpg";
+import gallerytwo from "../../assets/gallerytwo.jpg";
+import galleryone from "../../assets/galleryone.jpg";
+import missionIcon from "../../assets/mission_icon.svg";
+import visionIcon from "../../assets/vission_icon.svg";
 
 // Array of images to rotate in the gallery
 const images = [
@@ -35,7 +35,6 @@ const About = () => {
   // const [hovered, setHovered] = useState(false);
   // const navigate = useNavigate();
   const [isInView, setIsInView] = useState(false);
-  const [delayedView, setDelayedView] = useState(false);
 
   // State for rotating gallery images
   const [evenImages, setEvenImages] = useState([
@@ -54,59 +53,26 @@ const About = () => {
   ]);
 
   const elementRef = useRef(null);
-  const videoRef = useRef(null);
-
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver((entries) => {
-  //     entries.forEach((entry) => {
-  //       if (entry.isIntersecting) {
-  //         // Call your function here
-  //         alert("Element is in view!");
-  //       }
-  //     });
-  //   });
-
-  //   if (elementRef.current) {
-  //     observer.observe(elementRef.current);
-  //   }
-
-
-  //   return () => {
-  //     if (elementRef.current) {
-  //       observer.unobserve(elementRef.current);
-  //     }
-  //   };
-  // }, []);
 
   useEffect(() => {
-    const currElement = elementRef.current; // Move the variable declaration here
-  
+    const currElement = elementRef.current;
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setIsInView(true);
-          const timer = setTimeout(() => {
-            setDelayedView(true);
-            if (videoRef.current) {
-              videoRef.current.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-            }
-          }, 300);
-  
-          return () => clearTimeout(timer);
         } else {
           setIsInView(false);
-          setDelayedView(false);
         }
       });
     });
-  
+
     if (currElement) {
       observer.observe(currElement);
     }
-  
+
     document.title = "EARK-school";
-  
-    // Even cards image rotation
+
     const evenInterval = setInterval(() => {
       setEvenImages((prevImages) =>
         prevImages.map(
@@ -114,8 +80,7 @@ const About = () => {
         )
       );
     }, 3000);
-  
-    // Odd cards image rotation with delay
+
     const oddInterval = setTimeout(() => {
       setInterval(() => {
         setOddImages((prevImages) =>
@@ -124,9 +89,8 @@ const About = () => {
           )
         );
       }, 3000);
-    }, 1500); // Delay odd cards rotation by 1.5 seconds
-  
-    // Cleanup function to remove intervals and observer
+    }, 1500);
+
     return () => {
       if (currElement) {
         observer.unobserve(currElement);
@@ -134,14 +98,23 @@ const About = () => {
       clearInterval(evenInterval);
       clearTimeout(oddInterval);
     };
-  }, []); // Empty dependency array to run this effect only once
-  
+  }, []);
+  // Empty dependency array to run this effect only once
+  const baseStyle = {
+    transition: "opacity 1.5s ease-in-out",
+  };
 
+  // Conditionally add styles
+  const dynamicStyle = isInView ? { opacity: "1" } : { opacity: "0" };
+
+  // Combine base and dynamic styles
+  const combinedStyle = { ...baseStyle, ...dynamicStyle };
 
   return (
     <div className="eark__abt_main_container">
       <div className="eark__abt_card_holder">
         <div className="eark__abt_card_sml">
+          <img src={missionIcon} className="mission_logo" alt="mission" />
           <div className="eark__abt_card_heading">
             <h2>Our Mission</h2>
           </div>
@@ -154,6 +127,7 @@ const About = () => {
         </div>
 
         <div className="eark__abt_card_big">
+          <img src={visionIcon} className="vision_logo" alt="vision" />
           <div className="eark__abt_card_heading">
             <h2>Our Vision</h2>
           </div>
@@ -174,18 +148,21 @@ const About = () => {
           </ul>
         </div>
       </div>
-      <div className={`circle-container ${delayedView ? "expanded" : ""}`}></div>
+      <div
+        ref={elementRef}
+        className={`circle-container ${isInView ? "expanded" : " "}`}
+      ></div>
       <div className="eark__abt_video-container">
-            {/* {hovered && ( */}
-              <iframe
-              src="https://drive.google.com/file/d/1zxYwEzE88Co5DslCMhlpXrQ6CA0pC2rB/preview"
-              className="eark__abt_video"
-              allow="autoplay"
-              title="Video"
-            ></iframe>
-            {/* )} */}
-         </div>
-
+        {/* {hovered && ( */}
+        <iframe
+          src="https://drive.google.com/file/d/1zxYwEzE88Co5DslCMhlpXrQ6CA0pC2rB/preview"
+          className={`eark__abt_video`}
+          style={combinedStyle}
+          title="Video"
+        ></iframe>
+        {/* )} */}
+                 
+      </div>
 
       <div className="abt__school-head">
         <p>

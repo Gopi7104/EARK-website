@@ -5,7 +5,7 @@
 
 /* General Styles */
 .teachers-section {
-  padding:60px 160px 0px 90px;
+  padding:90px 160px 0px 90px;
   box-sizing: border-box;
 }
 
@@ -68,7 +68,7 @@
     gap: 20px;
     flex-wrap: wrap;
     /* padding-left: 5px;  */
-    margin-right: -50px; 
+    /* margin-right: -50px;  */
     box-sizing: border-box;
   }
  
@@ -98,11 +98,12 @@
   }
   @media (max-width: 999px) {
     .teachers-section{
-      padding:30px 150px 0px 80px;
+      padding:30px 80px 0px 80px;
     }
     .teacher_contentone{
       font-size: 18px;
       line-height: 1.5rem;
+      padding-right: 50px;
     }
     
   }
@@ -113,7 +114,7 @@
     .teachers-grid {
       justify-content: center;
       text-align: center;
-      padding-right: 40px;
+      padding-right: 70px;
       top:30px;
     }
     .teachers-grid > * {
@@ -132,6 +133,7 @@
     .teacher_contentone{
       font-size: 16px;
       line-height: 1.5rem;
+      padding-right: 5px;
     }
   }
   
