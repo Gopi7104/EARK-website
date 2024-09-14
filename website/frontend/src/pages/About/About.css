@@ -381,12 +381,8 @@
 
 .circle-container {
   position: absolute;
-  /* right: -15rem; */
   top: 73.5rem;
-  /* right: 10rem; */
   background-color: var(--color-primary1);
-  /* width: 202px; */
-  /* height: 202px; */
   border-radius: 50%;
   transition: all 1s ease-in-out;
   display: flex;
@@ -428,14 +424,83 @@
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 440px) {
+  .mission_logo,.vision_logo{
+    margin-top: -45px;
+    margin-left: 30px;
+    height: 80px;
+  }
+  .eark__abt_card_holder {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .eark__abt_card_sml{
+    margin: 0px;
+    margin-top: -90px;
+    width: 340px;
+    height: 250px;
+  }
+  .eark__abt_card_big{
+    margin: 0px;
+    width: 340px;
+    height: 380px;
+  }
+  .eark__abt_card_sml p,.eark__abt_card_big p {
+  text-indent: 40px;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 20px 28px 0px;
+}
+
+.eark__abt_card_big li {
+  text-align: justify;
+  font-family: var(--font-lato);
+  font-size: 16px;
+  line-height: 23px;
+  margin: 5px 28px 0px;
+}
+#abt__card_hgt{
+  font-size: 14px;
+}
+.eark__abt_card_heading h2{
+  font-size: 22px;
+}
+  .circle-container {
+    top: 60.5rem;
+    border-radius: 50%;
+  }
+  
   .circle-container.expanded {
-    width: 200px;
-    height: 150px;
+    width: 300px;
+    height: 260px;
+    margin-top: -10px;
+    border-radius: 25%;
+    left: -5rem;
+  }
+  
+  .eark__abt_video-container {
+    width: 550px;
+    height: 295px;
+    top: -70px;
+    margin-right:170px;
   }
   
   .eark__abt_video {
-    width: 350px;
+    width: 60%;
+    height: 65%;
+    object-fit: cover;
+    /* transition: all 0.1s ease-in-out; */
+  }
+  .abt__school-head{
+    margin-top: -95px;
+    padding: 0px 0px;
+    font-size: 18px;
+    width: 280px;
+    line-height: 25px;
+  }
+  #abt__aut{
+    padding-top: 10px;
   }
 }
 
