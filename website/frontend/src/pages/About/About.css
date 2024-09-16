@@ -88,7 +88,7 @@
   position: absolute;
   left: -8rem;
   top: 43.8rem;
-  background-color: var(--color-primary1);
+  background-color: #0BB3BD;
   width: 202px;
   height: 202px;
   border-radius: 50%;
@@ -160,7 +160,7 @@
 }
 
 #abt__aut {
-  color: #FCBB00;
+  color: #FFD700;
   font-family: var(--font-satoshi);
   font-weight: bolder;
 }
@@ -226,7 +226,7 @@
 }
 
 .Gallery_heading h1 {
-  color: #006b6b; /* Similar text color */
+  color: #216477; /* Similar text color */
   font-family: 'Satoshi'; /* Use the Satoshi font */
   font-weight: 700; /* Bold weight for heading */
   font-size: 45px;
@@ -242,7 +242,7 @@
   transform: translateX(-50%); /* Adjust to center the underline */
   bottom: -10px; /* Adjust this value to move the line closer or further from the text */
   height: 5px; /* Thickness of the underline */
-  background-color: #ffb300; /* Color of the underline */
+  background-color: #FFD700; /* Color of the underline */
   width: 100%; /* Adjust the width of the underline */
 }
 

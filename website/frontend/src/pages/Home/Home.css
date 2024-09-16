@@ -17,7 +17,7 @@
 
 .home_scl_name{
     display: flex;
-    font-family: 'Satoshi', sans-serif;
+    font-family: 'Albertus Medium', sans-serif;
     width: 551px;
     height: 267px;
     padding-left: 99px;
@@ -27,7 +27,7 @@
     font-size: 86px;
     font-weight: 900;
     line-height: 104%;
-    color: #0BB3BD;
+    color: #216477;
     text-shadow: 0px 4px 6.4px rgba(0, 44, 47, 0.7);
 }
 
@@ -52,7 +52,7 @@
 .home_apply_btn{
     width: 403.86px;
     height: 54.94px;
-    background: #FCBB00;
+    background-color: #FFD700;
     box-shadow: -4px -4px 6px rgba(255, 255, 255, 0.7), 1px 1px 5px rgba(0, 0, 0, 0.2), 5px 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 16px;
     font-family: 'Satoshi',sans-serif;
@@ -69,7 +69,7 @@
     width: 403.86px;
     height: 54.94px;
     box-sizing: border-box;
-    border: 1px solid #FCBB00;
+    border: 1px solid #FFD700;
     border-radius: 16px;
     font-family: 'Satoshi',sans-serif;
     font-style: normal;
@@ -93,7 +93,7 @@
     font-weight: 700;
     font-size: 39px;
     line-height: 53px;
-    color: #0BB3BD;
+    color: #216477;
 }
 
 .home_para{

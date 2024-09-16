@@ -21,17 +21,3 @@ export const Curriculum = [
   },
  
 ];
-export const des = [
-  {
-    id: "1",
-    heading: "Electronic Devices & Circuits Lab",
-    "sub-head":
-      "",
-    pic:th,
-    link:"https://youtu.be/ZfA004WzxEU",
-    content_1:
-      "",
-    content_2:
-      "The Electronic Devices and Circuits Laboratory has been established over an area of 159 sq.m. Here courses such as Digital Electronics Lab for III Sem, Linear Integrated Circuits Lab for V Sem and Electronic Circuits & Simulation Lab for IV Sem, are conducted. This lab is equipped with Electronic Workbenches with Regulated  Power supply, Function Generator, Cathode Ray Oscilloscope, Micro ammeter and Voltmeter, Bread Board and Personal computer with Mulitsim and ORCAD PSPICE Perpetual License (Software) and Digital trainer Kits.",
-  },
-]

@@ -113,7 +113,7 @@
 
 .eark__navbar-links a.active,
 .eark__navbar-menu_container-links a.active {
-  color: var(--color-primary1); 
+  color: #0BB3BD; 
 }
 
 
@@ -168,9 +168,9 @@
         height: 70px;
 
     }
-    .eark__navbar{
-        /* padding: 2rem; */
-    }
+    /* .eark__navbar{
+        padding: 2rem;
+    } */
 
     .eark__navbar-links_container {
         display: none;

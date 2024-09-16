@@ -65,7 +65,7 @@
 .curriculum_content1 h1,
 .curriculum_content2 h1,
 .curriculum_content3 h1 {
-  color:#0BB3BD;
+  color:#216477;
   font-size: 20px;
   font-weight: bold;
   /* padding-top: 20px; */
@@ -107,7 +107,7 @@
 }
 
 .curriculum_content3 h1 {
-  color:#0BB3BD;
+  color:#216477;
   font-size: 20px;
   font-weight: bold;
   padding-top: 40px;
@@ -125,7 +125,7 @@
 .curriculum_box3,
 .curriculum_box4 {
   padding: 30px;
-  border: 2px solid  #FCBB00;
+  border: 2px solid  #FFD700;
   border-radius: 8px;
   width: 100%;
   max-width: 100%;
@@ -138,7 +138,7 @@
 .curriculum_box2 h1,
 .curriculum_box3 h1 ,
 .curriculum_box4 h1{
-  color:#0BB3BD;
+  color:#216477;
   font-size: 24px;
   text-align: center;
   margin-bottom: 20px;

@@ -1,7 +1,7 @@
 // import employerblacktwo from '../assets/employerblacktwo.webp';
-import Angela from '../assets/teacher1.png';
-import Mary from '../assets/teacher2.png';
-import Chuckie from '../assets/teacher3.png';
+import Angela from '../assets/teacher1.webp';
+import Mary from '../assets/teacher2.webp';
+import Chuckie from '../assets/teacher3.webp';
 
 export const teacher = [
   {

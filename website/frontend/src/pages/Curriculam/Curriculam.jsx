@@ -16,7 +16,7 @@ function Curriculam() {
         <div>School</div>
       </div>
       <div className='curriculam_page'>
-        <div className='curriculum_content'>
+        {/* <div className='curriculum_content'>
           <div className='curriculum_content1'>
             <h1>Edexcel</h1>
             <p>At EARK International School, we are committed to providing our students with a diverse and globally recognized education. As part of this commitment, we proudly offer the Edexcel curriculum, a leading international academic qualification designed to equip students with the skills, knowledge, and understanding they need to succeed in the 21st century.</p>
@@ -26,7 +26,7 @@ function Curriculam() {
             <p>We offer the following Edexcel programs at EARK International School:</p>
             <p>Edexcel International A Levels: Building on the foundation of the International GCSE, the International A Levels offer in-depth study in specific subjects, paving the way for university education and specialized careers.</p>
           </div>
-        </div>
+        </div> */}
         <div className='curriculum_content3'>
           <h1>Cambridge Primary Curriculum</h1>
           <p>The Cambridge Primary Curriculum encourages children to be creative and innovative, building their independent thinking skills and allowing them to develop a love of learning. At EARK we give them the advantage of a highly balanced curriculum widely accepted around the globe.</p>
@@ -54,7 +54,7 @@ function Curriculam() {
         </div>
         <div className='curriculum_box3'>
           <h1>Focus On Sustainability and Global Citizenship</h1>
-          <p>Our curriculum is enriched by strong collaboration with parents and the local community. Regular interactions, workshops, and volunteering opportunities create a vibrant learning ecosystem that extends learning beyond the school walls.</p>
+          <p>We integrate themes of sustainability and global citizenship across our curriculum, encouraging students to think critically about their role in the world and to act responsibly towards the environment and society.</p>
         </div>
         <div className='curriculum_box4'>
         <h1>A Journey Towards Lifelong Learning</h1>
