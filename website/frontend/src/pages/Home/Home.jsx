@@ -37,6 +37,9 @@ import './Home.css'
           </div>
         </div>
         <div className='home_form_outer'>
+          <div className='home_form_heading'>
+            Contact Us
+          </div>
         <div className='home_form'>
         <div className='home_form_details home_form_name'>
           <input 
